@@ -1,8 +1,14 @@
-import { Navbar } from "./components";
+import BrandsIndex from "./components/Brands/BrandsIndex";
 import "./App.css";
 
 function App() {
-  return <Navbar />;
+  return (
+        <>
+
+        <BrandsIndex />
+        </>
+
+  );
 }
 
 export default App;
