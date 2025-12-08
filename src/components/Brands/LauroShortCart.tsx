@@ -4,7 +4,7 @@ const LauroShortCart = () => {
     return (
         <>
            
-            <div className="w-full px-[144px] flex justify-center mt-50">
+            <div className="w-full px-[144px] flex justify-center mt-30 mb-30">
                 
                 <div className="w-full bg-white rounded-xl  p-10 flex gap-8 max-w-[1200px] mx-auto">
                 
