@@ -1,13 +1,11 @@
-import BrandsIndex from "./components/Brands/BrandsIndex";
+import BrandsIndex from "./components/Brands/Lauro/BrandsIndex";
 import "./App.css";
 
 function App() {
   return (
-        <>
-
-        <BrandsIndex />
-        </>
-
+    <>
+      <BrandsIndex />
+    </>
   );
 }
 
