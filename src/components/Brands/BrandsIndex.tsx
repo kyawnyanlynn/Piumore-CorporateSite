@@ -1,6 +1,7 @@
 import Navbar from "../Navbar";
 import LauroVisual from "./LauroVisual";
 import LauroAbout from "./LauroAbout";
+import LauroShortCart from "./LauroShortCart";
 
 
 const BrandsIndex = () => {
@@ -9,6 +10,7 @@ const BrandsIndex = () => {
             <Navbar />
             <LauroVisual />
             <LauroAbout />
+            <LauroShortCart />
         </>
     )
 }
