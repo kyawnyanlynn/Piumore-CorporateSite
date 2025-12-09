@@ -6,3 +6,4 @@ export { default as lauro_food } from "./lauro_food.png";
 export { default as lauro_shop } from "./lauro_shop.png";
 export { default as lauro_menu1 } from "./lauro_menu1.png";
 export { default as lauro_day_people} from "./lauro_day_people.png";
+export { default as recruitPeople } from "./recruitPeoples.png";
