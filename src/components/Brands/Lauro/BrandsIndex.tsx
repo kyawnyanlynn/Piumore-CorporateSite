@@ -4,6 +4,8 @@ import LauroShortCart from "./LauroShortCart";
 import LauroMenu from "./LauroMenu";
 import BrandsVisual from "../BrandsVisual";
 import { Kv_Lauro } from "../../../images";
+import LauroSwiper from "./LauroSwper";
+
 
 const BrandsIndex = () => {
   return (
@@ -13,6 +15,7 @@ const BrandsIndex = () => {
       <LauroAbout />
       <LauroShortCart />
       <LauroMenu />
+      <LauroSwiper />
     </>
   );
 };
