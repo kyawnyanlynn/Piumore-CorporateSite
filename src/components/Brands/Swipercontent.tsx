@@ -26,11 +26,15 @@ const Swipercontent = ({ images }: { images: string[] }) => {
           className="scale-swiper"
           modules={[Navigation, Pagination]}
           centeredSlides={true}  
-          slidesPerView={3}
+          slidesPerView={1}
           spaceBetween={30}
           navigation
           pagination={{ clickable: true }}
           loop={true}
+          breakpoints={{
+            640: { slidesPerView: 2},
+            1024: { slidesPerView: 3},
+          }}
           
         >
           {images.map((img, index) => (
