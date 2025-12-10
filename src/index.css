@@ -11,4 +11,8 @@
   .line-break {
     white-space: pre-wrap;
   }
+
+  img {
+    box-sizing: border-box;
+  }
 }

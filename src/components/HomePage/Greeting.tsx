@@ -1,10 +1,10 @@
-import { boss } from "../../images";
+import { representative, greetingVector } from "../../images";
 const Greeting = () => {
   return (
     <>
-      <div className="flex w-[80%] m-auto gap-5">
-        <div className="bg-amber-600 w-[412px]">
-          <img src={boss} alt="社長の写真" />
+      <div className="flex w-[80%] m-auto gap-5 mt-25 relative ">
+        <div className="">
+          <img className="h-full" src={representative} alt="社長の写真" />
         </div>
         <div className="flex flex-col">
           <div className="">
@@ -23,14 +23,19 @@ const Greeting = () => {
             </p>
           </div>
           <div className="flex justify-between">
-            <p>
+            <p className="mb-0">
               代表 <span className="text-[22px]">小森 桂介</span>
             </p>
-            <a className="underline" href="">
+            <a className="underline text-white mb-0" href="">
               メッセージを読む
             </a>
           </div>
         </div>
+        <img
+          className="absolute w-[200px] h-[200px] z-[-1] right-0 bottom-0"
+          src={greetingVector}
+          alt=""
+        />
       </div>
     </>
   );
