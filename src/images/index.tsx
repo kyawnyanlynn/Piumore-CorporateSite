@@ -7,3 +7,7 @@ export { default as lauro_shop } from "./lauro_shop.png";
 export { default as lauro_menu1 } from "./lauro_menu1.png";
 export { default as lauro_day_people} from "./lauro_day_people.png";
 export { default as recruitPeople } from "./recruitPeoples.png";
+export { default as KV_Recruitment } from "./KV_Recruitment.png";
+export { default as Recruit_lauro } from "./Recruit_lauro.png"; 
+export { default as Recruit_katsuya } from "./Recruit_katsuya.png";
+export { default as Recruit_hinoya } from "./Recruit_hinoya.png";
