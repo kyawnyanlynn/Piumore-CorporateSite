@@ -1,6 +1,7 @@
 import Navbar from '../Navbar';
 import RercuitVisual from './RecruitVisual';
 import RecruitAbout from './RecruitAbout';
+import Recriutboss from './Recruitboss';
 
 
 
@@ -10,6 +11,7 @@ const RecruitIntex = () => {
             <Navbar />
             <RercuitVisual />
             <RecruitAbout />
+            <Recriutboss />
         </>
     )
 }

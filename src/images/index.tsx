@@ -11,3 +11,4 @@ export { default as KV_Recruitment } from "./KV_Recruitment.png";
 export { default as Recruit_lauro } from "./Recruit_lauro.png"; 
 export { default as Recruit_katsuya } from "./Recruit_katsuya.png";
 export { default as Recruit_hinoya } from "./Recruit_hinoya.png";
+export { default as Recruit_boss } from "./Recruit_boss.png";
