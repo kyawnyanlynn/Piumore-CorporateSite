@@ -2,11 +2,11 @@ import { KV_Recruitment } from "../../images";
 
 const RecruitVisual = () => {
   return (
-    <div className="relative w-full py-20">
+    <div className="relative w-full h-screen">
       <img
         src={KV_Recruitment}
         alt="Recruitment Visual"
-        className="w-full object-cover opacity-0.9"
+        className="w-full h-full  object-cover "
       />
       <p
         className="
