@@ -1,5 +1,9 @@
-import recruitmentCircle from "../../images/Recruitment.png";
+import { useState } from "react";
+import { recruitmentCircle, rightArrow } from "../../images/";
+import "../Css/recruitment.css";
 const Recruitment = () => {
+  const [isHover, setIsHover] = useState(false);
+
   return (
     <>
       <div className="flex justify-center mt-20 mb-20 gap-40">
@@ -11,10 +15,36 @@ const Recruitment = () => {
           <p className="text-[20px] mb-5">
             発揮できる環境づくりを大切にしています。
           </p>
-          <button className="bg-[#B42423] w-[150px] h-11 rounded-lg">
-            <a className="text-white" href="">
+          <button
+            className="group bg-[#B42423] w-[170px] h-11 rounded-lg flex items-center justify-center px-4 overflow-hidden cursor-pointer"
+            onMouseEnter={() => setIsHover(true)}
+            onMouseLeave={() => setIsHover(false)}
+          >
+            {/* Text */}
+            <span
+              className="
+      text-white 
+      transition-all 
+      duration-300
+      group-hover:pr-3
+    "
+            >
               採用情報を見る
-            </a>
+            </span>
+
+            {/* Arrow = only rendered when hovered */}
+            {isHover && (
+              <img
+                src={rightArrow}
+                alt=""
+                className="
+        w-4 
+        opacity-0 
+        translate-x-[-8px]
+        animate-arrow-in
+      "
+              />
+            )}
           </button>
         </div>
         <div className="h-[400px] w-[400px] rounded-full">

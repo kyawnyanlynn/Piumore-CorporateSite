@@ -1,0 +1,38 @@
+@keyframes slideFromTopLeftBounce {
+  0% {
+    opacity: 0;
+    transform: translate(-100px, -100px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(20px, 20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+.animate-slide-top-left {
+  animation: slideFromTopLeftBounce 0.75s cubic-bezier(0.5, 0.2, 0.3, 0.5)
+    forwards;
+}
+.animate-slide-text {
+  animation: slideFromTopLeftBounce 0.75s ease-in-out forwards;
+}
+.slideshow-container {
+  position: relative;
+}
+
+.slideshow-image {
+  position: absolute;
+  inset: 0; /* same as top:0 right:0 bottom:0 left:0 */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out; /* SUPER smooth fade */
+}
+
+.slideshow-image.active {
+  opacity: 1;
+}

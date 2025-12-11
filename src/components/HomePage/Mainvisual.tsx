@@ -1,37 +1,33 @@
-import { kv } from "../../images";
+import { kv1, kv2, kv3 } from "../../images";
+import { useState, useEffect } from "react";
+import "../Css/mainvisual.css";
+
+const images = [kv1, kv2, kv3];
 
 const Mainvisual = () => {
+  const [index, setIndex] = useState(0);
+
+  // Auto change image every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="relative w-screen min-h-screen bg-white overflow-hidden mt-20">
-      <style>{`
-        @keyframes slideFromTopLeftBounce {
-          0% {
-            opacity: 0;
-            transform: translate(-100px, -100px);
-          }
-          60% {
-            opacity: 1;
-            transform: translate(20px, 20px);
-          }
-          100% {
-            opacity: 1;
-            transform: translate(0px, 0px);
-          }
-        }
-        .animate-slide-top-left {
-          animation: slideFromTopLeftBounce 0.75s cubic-bezier(0.5, 0.2, 0.3, 0.5) forwards;
-        }
-        .animate-slide-text {
-          animation: slideFromTopLeftBounce 0.75s ease-in-out forwards;
-        }
-      `}</style>
       <div className="relative w-full">
-        <div className="ml-auto w-[70%] h-[calc(100vh-80px)]">
-          <img
-            src={kv}
-            alt="シェフの写真"
-            className="w-full h-full border border-none rounded-l-2xl object-cover"
-          />
+        <div className="slideshow-container ml-auto w-[70%] h-[calc(100vh-80px)] rounded-l-2xl overflow-hidden">
+          {images.map((img, i) => (
+            <img
+              key={i}
+              src={img}
+              className={`slideshow-image ${i === index ? "active" : ""}`}
+              alt="main visual"
+            />
+          ))}
         </div>
 
         <div className="absolute left-[17%] top-[50%] -translate-y-1/2 flex items-start gap-8">
@@ -39,7 +35,7 @@ const Mainvisual = () => {
             className="bg-[#B42423] w-[120px] h-[500px] opacity-0 flex pt-[15px] justify-center animate-slide-top-left"
             style={{ animationDelay: "0.2s", writingMode: "vertical-rl" }}
           >
-            <p
+            <h1
               className="font-bold text-[72px] text-white animate-slide-text opacity-0"
               style={{
                 textOrientation: "upright",
@@ -48,8 +44,8 @@ const Mainvisual = () => {
               }}
             >
               現
-            </p>
-            <p
+            </h1>
+            <h1
               className="font-bold text-[72px] text-white animate-slide-text opacity-0"
               style={{
                 textOrientation: "upright",
@@ -58,8 +54,8 @@ const Mainvisual = () => {
               }}
             >
               状
-            </p>
-            <p
+            </h1>
+            <h1
               className="font-bold text-[72px] text-white animate-slide-text opacity-0"
               style={{
                 textOrientation: "upright",
@@ -68,8 +64,8 @@ const Mainvisual = () => {
               }}
             >
               を
-            </p>
-            <p
+            </h1>
+            <h1
               className="font-bold text-[72px] text-white animate-slide-text opacity-0"
               style={{
                 textOrientation: "upright",
@@ -78,8 +74,8 @@ const Mainvisual = () => {
               }}
             >
               変
-            </p>
-            <p
+            </h1>
+            <h1
               className="font-bold text-[72px] text-white animate-slide-text opacity-0"
               style={{
                 textOrientation: "upright",
@@ -88,8 +84,8 @@ const Mainvisual = () => {
               }}
             >
               え
-            </p>
-            <p
+            </h1>
+            <h1
               className="font-bold text-[72px] text-white animate-slide-text opacity-0"
               style={{
                 textOrientation: "upright",
@@ -98,14 +94,14 @@ const Mainvisual = () => {
               }}
             >
               る
-            </p>
+            </h1>
           </div>
 
           <div
             className="bg-[#B42423] w-[120px] h-[410px] flex pt-[15px] justify-center animate-slide-top-left"
             style={{ animationDelay: "0s", writingMode: "vertical-rl" }}
           >
-            <p
+            <h1
               className="font-bold text-[72px] text-white animate-slide-text opacity-0"
               style={{
                 textOrientation: "upright",
@@ -114,8 +110,8 @@ const Mainvisual = () => {
               }}
             >
               飲
-            </p>
-            <p
+            </h1>
+            <h1
               className="font-bold text-[72px] text-white animate-slide-text opacity-0"
               style={{
                 textOrientation: "upright",
@@ -124,8 +120,8 @@ const Mainvisual = () => {
               }}
             >
               食
-            </p>
-            <p
+            </h1>
+            <h1
               className="font-bold text-[72px] text-white animate-slide-text opacity-0"
               style={{
                 textOrientation: "upright",
@@ -134,8 +130,8 @@ const Mainvisual = () => {
               }}
             >
               業
-            </p>
-            <p
+            </h1>
+            <h1
               className="font-bold text-[72px] text-white animate-slide-text opacity-0"
               style={{
                 textOrientation: "upright",
@@ -144,8 +140,8 @@ const Mainvisual = () => {
               }}
             >
               界
-            </p>
-            <p
+            </h1>
+            <h1
               className="font-bold text-[72px] text-white animate-slide-text opacity-0"
               style={{
                 textOrientation: "upright",
@@ -154,7 +150,7 @@ const Mainvisual = () => {
               }}
             >
               の
-            </p>
+            </h1>
           </div>
         </div>
       </div>

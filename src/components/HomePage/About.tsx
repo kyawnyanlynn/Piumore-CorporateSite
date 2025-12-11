@@ -12,7 +12,7 @@ const About = () => {
         />
 
         {/* content sits above the background */}
-        <div className="relative z-10 text-center">
+        <div className="relative text-center">
           <h2 className="text-4xl font-medium mb-6">
             <span className="text-[#B42423]">PIUMORE</span>とは
           </h2>

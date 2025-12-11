@@ -1,0 +1,31 @@
+.nav-item {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 6px;
+}
+@media (max-width: 767px) {
+  .nav-item {
+    display: block;
+    padding: 12px 0;
+  }
+}
+.logo {
+  cursor: pointer;
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #000;
+  transition: width 250ms ease;
+  transform-origin: left;
+}
+.nav-item:hover::after {
+  width: 100%;
+}
+.nav-item:hover {
+  cursor: pointer;
+}

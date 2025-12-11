@@ -1,5 +1,10 @@
 @import "tailwindcss";
 @layer base {
+  body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
   li {
     @apply p-4;
   }
@@ -14,5 +19,12 @@
 
   img {
     box-sizing: border-box;
+  }
+  p,
+  h1,
+  h2,
+  h3 {
+    margin: 0;
+    padding: 0;
   }
 }
