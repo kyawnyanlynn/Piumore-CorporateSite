@@ -13,3 +13,5 @@ export { default as Recruit_katsuya } from "./Recruit_katsuya.png";
 export { default as Recruit_hinoya } from "./Recruit_hinoya.png";
 export { default as Recruit_boss } from "./Recruit_boss.png";
 export { default as KV_Kathura } from "./KV_Kathura.png";
+export { default as Kathura_food } from "./Kathura_food.png";  
+export { default as Kathura_shop } from "./Kathura_shop.png";

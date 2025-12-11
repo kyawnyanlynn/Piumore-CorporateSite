@@ -1,6 +1,6 @@
 import { lauro_menu1 } from "../../../images";
 
-const LauroMenu = () => {
+const KathuraMenu = () => {
   return (
     <div className="w-full bg-[#9F3A2E] py-40 px-6">
       <h2 className="text-white text-3xl font-bold text-center mb-12">
@@ -57,4 +57,4 @@ const LauroMenu = () => {
   );
 };
 
-export default LauroMenu;
+export default KathuraMenu;
