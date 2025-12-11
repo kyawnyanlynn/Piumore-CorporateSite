@@ -8,7 +8,7 @@ const CompanyManagement = () => {
                 <h2 className="text-[#B42423] text-3xl sm:text-4xl font-bold mb-10">経営理念</h2>
                 <div>
                     <h3 className="text-[#B42423] text-2xl sm:test-3xl font-bold mb-10">「“もっと”の文化を世界へ」</h3>
-                        <p>PIUMOREは、飲食を通して人の可能性と笑顔を広げていきます。
+                        <p className="text-xl">PIUMOREは、飲食を通して人の可能性と笑顔を広げていきます。
                         <br />
                         “もっとおいしく”、“もっと働きやすく”という価値観を、世界基準の飲食モデルに
                         <br />
@@ -17,7 +17,7 @@ const CompanyManagement = () => {
                             <img src={Management_1} alt="" />
                             <img src={Management_2} alt="" />
                         </div>
-                        <p>「PIUMOREで働く＝自分の“もっと”が実現できる場所」と言われる会社へ
+                        <p className="text-xl">「PIUMOREで働く＝自分の“もっと”が実現できる場所」と言われる会社へ
 </p>
                 </div>
             </div>

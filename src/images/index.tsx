@@ -19,3 +19,6 @@ export { default as Management_1 } from "./Management_1.png";
 export { default as Management_2 } from "./Management_2.png";
 export { default as Challenge_1 } from "./Challenge_1.png";
 export { default as Challenge_2 } from "./Challenge_2.png";
+export { default as FCbusiness_1 } from "./FCbusiness_1.png";
+export { default as FCbusiness_2 } from "./FCbusiness_2.png";
+export { default as FCbusiness_3 } from "./FCbusiness_3.png";
