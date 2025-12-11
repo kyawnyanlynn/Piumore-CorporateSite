@@ -9,7 +9,7 @@ const RecruitAbout = () => {
                     <img 
                         src={Recruit_lauro} 
                         alt="オステリアラウロ" 
-                        className="aspect-[356/235]"
+                        className="w-full h-48 object-cover rounded-lg"
                         />
                     <p className="text-center font-semibold mb-5 ">神保町　オステリアラウロ（イタリア料理）</p>
                     <p>
@@ -22,7 +22,7 @@ const RecruitAbout = () => {
                     <img 
                         src={Recruit_katsuya} 
                         alt="かつら" 
-                        className="aspect-[356/235]"
+                        className="w-full h-48 object-cover rounded-lg"
                         />
                     <p className="text-center font-semibold  mb-5">神保町　かつら（和食・すき焼き）</p>
                     <p>歌舞伎の演目にも登場する伝統味噌を使い江戸時代のレシピを再現した江戸前すき焼きが名物のお店。
@@ -33,7 +33,7 @@ const RecruitAbout = () => {
                     <img 
                         src={Recruit_hinoya} 
                         alt="日乃屋カレー" 
-                        className="aspect-[356/235]"
+                        className="w-full h-48 object-cover rounded-lg"
                         />
                     <p className="text-center font-semibold mb-5">大手町　日乃屋カレー（FC事業）</p>
                     <p>【時代を超えて受け継がれてきた日乃屋のカレー。

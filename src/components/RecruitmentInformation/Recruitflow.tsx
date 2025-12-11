@@ -12,7 +12,7 @@ const Recruitfow = () => {
         <div className="w-full  flex flex-col items-center">
             <h2 className="text-2xl sm:text-4xl mb-10">選考フロー</h2>
             <div className="relative w-full max-w-xl">
-                {/* 真ん中の線 */}
+
                 <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-black transform -translate-x-1/2" />
                 <div className="flex flex-col gap-10 ">
                     {steps.map((step, index) => (

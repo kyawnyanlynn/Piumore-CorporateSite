@@ -11,7 +11,7 @@ const RecruitVisual = () => {
       <p
         className="
                 absolute 
-                top-6/10 
+                top-10/12 
                 left-1/2 
                 transform -translate-x-24/25 -translate-y-1/
                  text-white 
