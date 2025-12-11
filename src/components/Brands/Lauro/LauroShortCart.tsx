@@ -4,7 +4,7 @@ const LauroShortCart = () => {
   return (
     <>
       <div className="w-full px-[5%] sm:px-[144px]  flex justify-center mt-30 mb-30">
-        <div className="w-full bg-white rounded-xl  p-0 sm:p-10 flex flex-col md:flex-row  gap-8 max-w-[1200px] mx-auto">
+        <div className="w-full bg-white rounded-xl  p-0 sm:p-10 flex flex-col md:flex-row  gap-8 max-w-[1200px] mx-auto leading-relaxed tracking-wide">
           <div className="flex-1 w-full sm:w-[45%]">
             <h2 className="text-2xl sm:text-5xl font-bold text-[#B42423] leading-tight mb-3">
               路地裏に佇む <br /> 本格イタリアン
@@ -24,12 +24,12 @@ const LauroShortCart = () => {
             <img
               src={lauro_food}
               alt="料理"
-              className="absolute top-0 left-0 w-[60%]  object-cover rounded-lg shadow-md"
+              className="absolute top-0 left-0 w-[60%]  object-cover rounded-lg "
             />
             <img
               src={lauro_shop}
               alt="店舗"
-              className="absolute right-5 w-[60%] object-cover rounded-lg shadow-md translate-y-[50px]"
+              className="absolute right-5 w-[60%] object-cover rounded-lg  translate-y-[50px]"
             />
           </div>
         </div>
