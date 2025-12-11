@@ -22,7 +22,6 @@ const Recruitfow = () => {
                             relative bg-[#B42423] text-white rounded-xl py-6 px-8 w-full"
                             >
                             <p className="text-2xl sm:text-3xl font-bold absolute left-6 top-1/2 -translate-y-1/2">{step.number}  </p>
-                            {/* <p className="absolute text-2xl  sm:text-3xl font-bold ">{step.number}</p> */}
                             <div className="flex flex-col  items-center text-center">
                                 <div className="text-center">
                                     <p className="text-xl sm:text-2xl">{step.title}</p>
