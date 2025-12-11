@@ -15,3 +15,5 @@ export { default as Recruit_boss } from "./Recruit_boss.png";
 export { default as KV_Kathura } from "./KV_Kathura.png";
 export { default as Kathura_food } from "./Kathura_food.png";  
 export { default as Kathura_shop } from "./Kathura_shop.png";
+export { default as Management_1 } from "./Management_1.png";
+export { default as Management_2 } from "./Management_2.png";

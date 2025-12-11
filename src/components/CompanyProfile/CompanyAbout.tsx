@@ -4,7 +4,7 @@ const CompanyAbout = () => {
   return (
     <div className="px-[5%] sm:px-[10%] py-10 ">
       {/* タイトル */}
-      <h2 className="text-3xl sm:text-4xl font-bold text-red-600 mb-10">
+      <h2 className="text-3xl sm:text-4xl font-bold text-[#B42423] mb-10">
         会社概要
       </h2>
 
