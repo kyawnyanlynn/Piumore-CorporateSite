@@ -9,7 +9,7 @@ const steps = [
 
 const Recruitfow = () => {
     return (
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full  flex flex-col items-center">
             <h2 className="text-2xl sm:text-4xl mb-10">選考フロー</h2>
             <div className="relative w-full max-w-xl">
                 {/* 真ん中の線 */}
