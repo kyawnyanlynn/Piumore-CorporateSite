@@ -1,1 +1,12 @@
+/* initial state: hidden + slightly moved down */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease-out, transform 0.9s ease-out;
+}
 
+/* when in view */
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

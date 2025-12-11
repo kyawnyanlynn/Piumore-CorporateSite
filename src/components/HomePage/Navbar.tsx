@@ -1,26 +1,27 @@
 import { useState } from "react";
-
+import "../Css/navbar.css";
 import { menu, close, logo } from "../../images";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const handleClick = () => setToggle(!toggle);
   return (
-    <div className="w-screen h-20 z-10 text-black bg-white fixed ">
+    <div className="w-screen h-20 z-10 bg-white fixed top-0">
       <div className="flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto">
         <div className="flex items-center ">
           <img
             src={logo}
             alt="ロゴ"
-            className="sm:ml-10 ss:ml-10 md:ml-3 w-full h-15"
+            className="sm:ml-10 ss:ml-10 md:ml-3 w-full h-15 logo"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           />
         </div>
-        <div className="flex items-center">
-          <ul className="hidden md:flex">
-            <li>企業情報</li>
-            <li>ブランド</li>
-            <li>お知らせ</li>
-            <li>採用情報</li>
+        <div className="flex items-center font-medium text-lg">
+          <ul className="hidden md:flex gap-9">
+            <li className="nav-item">企業情報</li>
+            <li className="nav-item">ブランド</li>
+            <li className="nav-item">お知らせ</li>
+            <li className="nav-item">採用情報</li>
           </ul>
         </div>
         <div className="md:hidden" onClick={handleClick}>
@@ -36,10 +37,10 @@ const Navbar = () => {
           toggle ? "absolute bg-amber-900 w-full px-8 md:hidden" : "hidden"
         }
       >
-        <li>企業情報</li>
-        <li>ブランド</li>
-        <li>お知らせ</li>
-        <li>採用情報</li>
+        <li className="nav-item">企業情報</li>
+        <li className="nav-item">ブランド</li>
+        <li className="nav-item">お知らせ</li>
+        <li className="nav-item">採用情報</li>
       </ul>
     </div>
   );
