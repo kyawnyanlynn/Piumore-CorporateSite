@@ -3,8 +3,8 @@
 const LauroAbout = () => {
     return (
           <>
-            <div className="flex flex-col items-center mt-10 sm:mt-30 leading-relaxed tracking-wide">
-                <h2 className="text-center text-2xl sm:text-5xl pb-8 pt-6 text-[#B42423] ">コンセプト</h2>
+            <div className="flex flex-col items-center  sm:mt-30 leading-relaxed tracking-wide">
+                <h2 className="text-center text-2xl sm:text-5xl  py-8 text-[#B42423] ">コンセプト</h2>
                 <div className="text-[18px] pb-7">
                      <p className="text-left px-[5%] sm:px-0 text-lg ">
                         この街・神保町は、書店や古書街、知の集まる場所として知られています。

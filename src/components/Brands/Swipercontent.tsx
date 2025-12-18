@@ -16,24 +16,32 @@ import "./SwiperCss.css";
 
 const Swipercontent = ({ images }: { images: string[] }) => {
   return (
-    <section className="py-20">
+    <section className="py-20 overflow-x-hidden">
       <h2 className="text-center text-3xl font-bold text-[#B42423] mb-10">
         日々の風景
       </h2>
 
-      <div className="max-w-5xl mx-auto px-4">
+      <div className="max-w-5xl mx-auto">
         <Swiper
-          className="scale-swiper"
+          className="scale-swiper w-full overflow-hidden"
           modules={[Navigation, Pagination]}
-          centeredSlides={true}  
+          centeredSlides={false}  
           slidesPerView={1}
-          spaceBetween={30}
+          spaceBetween={0}
           navigation
           pagination={{ clickable: true }}
           loop={true}
           breakpoints={{
-            640: { slidesPerView: 2},
-            1024: { slidesPerView: 3},
+            640: { 
+              slidesPerView: 2, 
+              centeredSlides: true,
+              spaceBetween: 30,
+            },
+            1024: { 
+              slidesPerView: 3,
+              centeredSlides: true,
+              spaceBetween: 30,
+            },
           }}
           
         >
