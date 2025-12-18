@@ -1,4 +1,4 @@
-import BrandsIndex from "./components/Brands/Lauro/BrandsIndex";
+import LauroIndex from "./components/Brands/Lauro/LauroIndex";
 import "./App.css";
 import RecruitIntex from "./components/RecruitmentInformation/RecruitIntex";
 import KathuraIndex from "./components/Brands/kathura/KathuraIndex";
@@ -8,11 +8,11 @@ import FCIndex from "./components/ FCbusiness/FCIndex";
 function App() {
   return (
     <>
-      {/* <BrandsIndex /> */}
+      <LauroIndex />
       {/* <RecruitIntex /> */}
       {/* <KathuraIndex /> */}
       {/* <CompanyIndex /> */}
-      <FCIndex />
+      {/* <FCIndex /> */}
     </>
   );
 }

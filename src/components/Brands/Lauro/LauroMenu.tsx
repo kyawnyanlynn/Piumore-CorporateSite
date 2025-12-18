@@ -1,4 +1,4 @@
-import { lauro_menu1 } from "../../../images";
+import { lauro_menu2, lauro_menu3, lauro_menu4 } from "../../../images";
 
 const LauroMenu = () => {
   return (
@@ -12,7 +12,7 @@ const LauroMenu = () => {
         <div>
           <div className="w-[100%] h-[90%] mx-auto mb-4">
             <img
-              src={lauro_menu1}
+              src={lauro_menu2}
               alt="AAAの写真"
               className="w-full h-full object-cover rounded-lg"
             />
@@ -27,7 +27,7 @@ const LauroMenu = () => {
         <div>
           <div className="w-[100%] h-[90%] mx-auto mb-4">
             <img
-              src={lauro_menu1}
+              src={lauro_menu3}
               alt="BBBの写真"
               className="w-full h-full object-cover rounded-lg"
             />
@@ -42,7 +42,7 @@ const LauroMenu = () => {
         <div>
           <div className="w-[100%] h-[90%] mx-auto mb-4">
             <img
-              src={lauro_menu1}
+              src={lauro_menu4}
               alt="CCCの写真"
               className="w-full h-full object-cover rounded-lg"
             />
