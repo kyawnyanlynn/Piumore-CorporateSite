@@ -25,3 +25,7 @@ export { default as FCbusiness_3 } from "./FCbusiness_3.png";
 export { default as lauro_menu2 } from "./lauro_menu2.jpg";
 export { default as lauro_menu3 } from "./lauro_menu3.jpg";
 export { default as lauro_menu4 } from "./lauro_menu4.jpg";
+export { default as katsuya_menu1 } from "./katsuya_menu1.jpg";
+export { default as katsuya_menu2 } from "./katsuya_menu2.jpg";
+export { default as katsuya_menu3 } from "./katsuya_menu3.jpg";
+

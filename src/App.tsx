@@ -8,9 +8,9 @@ import FCIndex from "./components/ FCbusiness/FCIndex";
 function App() {
   return (
     <>
-      <LauroIndex />
+      {/* <LauroIndex /> */}
       {/* <RecruitIntex /> */}
-      {/* <KathuraIndex /> */}
+      <KathuraIndex />
       {/* <CompanyIndex /> */}
       {/* <FCIndex /> */}
     </>
