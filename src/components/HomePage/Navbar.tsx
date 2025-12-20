@@ -1,48 +1,90 @@
-import { useState } from "react";
+// Navbar.tsx
+import { useEffect, useState } from "react";
+import { logo } from "../../images";
 import "../Css/navbar.css";
-import { menu, close, logo } from "../../images";
 
-const Navbar = () => {
-  const [toggle, setToggle] = useState(false);
-  const handleClick = () => setToggle(!toggle);
+export default function Navbar() {
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  useEffect(() => {
+    const html = document.documentElement;
+
+    if (isOpen) {
+      html.style.overflow = "hidden";
+      document.body.style.overflow = "hidden";
+    } else {
+      html.style.overflow = "";
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      html.style.overflow = "";
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
+
   return (
-    <div className="w-screen h-20 z-10 bg-white fixed top-0">
-      <div className="flex justify-between items-center w-full h-full md:max-w-[1240px] m-auto">
-        <div className="flex items-center ">
+    <>
+      <header className="site-header fixed top-0 left-0 w-full h-20 bg-white z-1002">
+        <div className="flex justify-between items-center w-full h-full max-w-[1240px] mx-auto px-4">
           <img
             src={logo}
-            alt="ロゴ"
-            className="sm:ml-10 ss:ml-10 md:ml-3 w-full h-15 logo"
+            alt="PIUMORE"
+            className="h-10 cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           />
-        </div>
-        <div className="flex items-center font-medium text-lg">
-          <ul className="hidden md:flex gap-9">
+
+          <ul className="hidden md:flex gap-9 font-medium text-lg">
             <li className="nav-item">企業情報</li>
             <li className="nav-item">ブランド</li>
             <li className="nav-item">お知らせ</li>
             <li className="nav-item">採用情報</li>
           </ul>
+
+          <button
+            type="button"
+            className={`md:hidden ham-menu ${isOpen ? "active" : ""}`}
+            onClick={() => setIsOpen((prev) => !prev)}
+            aria-label="Toggle menu"
+            aria-expanded={isOpen}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
         </div>
-        <div className="md:hidden" onClick={handleClick}>
-          <img
-            src={toggle ? close : menu}
-            alt="メニュー"
-            className="w-7 h-7 object-contain mr-10"
-          />
-        </div>
-      </div>
-      <ul
-        className={
-          toggle ? "absolute bg-amber-900 w-full px-8 md:hidden" : "hidden"
-        }
+      </header>
+
+      <div
+        className={`menu-overlay md:hidden ${isOpen ? "open" : ""}`}
+        onClick={() => setIsOpen(false)}
+        aria-hidden="true"
+      />
+
+      <nav
+        className={`offscreen-menu md:hidden ${
+          isOpen ? "open" : ""
+        } flex items-center justify-center`}
+        aria-hidden={!isOpen}
       >
-        <li className="nav-item">企業情報</li>
-        <li className="nav-item">ブランド</li>
-        <li className="nav-item">お知らせ</li>
-        <li className="nav-item">採用情報</li>
-      </ul>
-    </div>
+        {/* header height space */}
+        <div className="h-20" />
+
+        <ul className="flex flex-col gap-8 px-8 pt-6 text-2xl font-medium items-center justify-between">
+          <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
+            企業情報
+          </li>
+          <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
+            ブランド
+          </li>
+          <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
+            お知らせ
+          </li>
+          <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
+            採用情報
+          </li>
+        </ul>
+      </nav>
+    </>
   );
-};
-export default Navbar;
+}
