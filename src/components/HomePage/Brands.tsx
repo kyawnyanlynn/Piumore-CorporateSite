@@ -5,12 +5,9 @@ const Brands = () => {
   return (
     <section className="w-full bg-[#F8F8F8] py-12 md:py-20">
       <div className="mx-auto w-[92%] md:w-[75%]">
-        {/* Title */}
         <h2 className="text-[28px] md:text-4xl text-center mb-10 md:mb-16">
           ブランド
         </h2>
-
-        {/* Brand cards (2) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           <BrandCard
             img={lauroLogo}

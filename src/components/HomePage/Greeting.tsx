@@ -8,14 +8,12 @@ const Greeting = () => {
   return (
     <section className="w-full mt-16 md:mt-40">
       <div className="relative mx-auto w-[92%] md:w-[75%] flex flex-col md:flex-row gap-8 md:gap-10 items-start">
-        {/* Image */}
         <img
           className="w-full max-w-[420px] md:max-w-none md:w-auto md:mt-3.5 object-cover"
           src={representative}
           alt="代表"
         />
 
-        {/* Text */}
         <div className="flex-1">
           <h3 className="text-[28px] md:text-[42px] mb-4 md:mb-8">
             代表メッセージ
@@ -42,7 +40,6 @@ const Greeting = () => {
           </p>
         </div>
 
-        {/* CTA / Quarter circle */}
         <div
           className="
             relative w-full md:absolute md:right-0 md:bottom-0

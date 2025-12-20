@@ -15,10 +15,8 @@ export default function Mainvisual() {
   }, []);
 
   return (
-    // Full hero height on mobile, minus header height (80px)
     <section className="relative w-full bg-white overflow-x-hidden mt-20 h-[calc(100svh-80px)]">
       <div className="relative w-full h-full">
-        {/* Slider fills the section on mobile */}
         <div className="relative w-full h-full md:ml-auto md:w-[70%] overflow-hidden md:rounded-l-2xl">
           {images.map((img, i) => (
             <img
@@ -33,8 +31,6 @@ export default function Mainvisual() {
             />
           ))}
         </div>
-
-        {/* Text overlay */}
         <div
           className="
     absolute

@@ -67,7 +67,6 @@ export default function Navbar() {
         } flex items-center justify-center`}
         aria-hidden={!isOpen}
       >
-        {/* header height space */}
         <div className="h-20" />
 
         <ul className="flex flex-col gap-8 px-8 pt-6 text-2xl font-medium items-center justify-between">

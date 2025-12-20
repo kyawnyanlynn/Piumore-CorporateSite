@@ -4,7 +4,6 @@ const Footer = () => {
   return (
     <footer className="bg-[#B42423] text-white">
       <div className="mx-auto w-[92%] lg:w-[90%] px-4 lg:px-0 py-12 lg:flex justify-between">
-        {/* Company info (always top-left) */}
         <div className="mb-10 text-sm">
           <p className="font-medium text-[18px]">株式会社PIUMORE</p>
           <p>本社：東京都千代田区神田神保町1-35-16 O&amp;Oビル1F</p>
@@ -41,8 +40,6 @@ const Footer = () => {
             エントリー
           </a>
         </div>
-
-        {/* Bottom */}
       </div>
       <div className="mt-14 text-center text-xs opacity-90">
         ©︎ PIUMORE INC.

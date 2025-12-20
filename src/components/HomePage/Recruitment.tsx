@@ -1,14 +1,10 @@
-import { useState } from "react";
 import { recruitmentCircle, rightArrow } from "../../images/";
 import "../Css/recruitment.css";
 
 const Recruitment = () => {
-  const [isHover, setIsHover] = useState(false);
-
   return (
     <section className="w-full mt-12 md:mt-20 mb-12 md:mb-20">
       <div className="mx-auto w-[92%] md:w-[75%] flex flex-col-reverse md:flex-row items-center justify-between gap-10 md:gap-40">
-        {/* TEXT */}
         <div className="flex flex-col items-center md:items-start gap-4 md:gap-5 text-center md:text-left">
           <h2 className="text-[28px] md:text-4xl pb-4 md:pb-8">採用情報</h2>
 
@@ -19,7 +15,6 @@ const Recruitment = () => {
             発揮できる環境づくりを大切にしています。
           </p>
 
-          {/* BUTTON */}
           <button
             className="
     group
@@ -34,7 +29,6 @@ const Recruitment = () => {
     transition-all duration-300
   "
           >
-            {/* Text */}
             <span
               className="
       text-white
@@ -45,8 +39,6 @@ const Recruitment = () => {
             >
               採用情報を見る
             </span>
-
-            {/* Arrow */}
             <img
               src={rightArrow}
               alt=""
