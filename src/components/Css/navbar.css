@@ -15,7 +15,6 @@
   -webkit-tap-highlight-color: transparent;
 }
 .site-header {
-  /* keep */
   top: 0;
   left: 0;
   width: 100%;
@@ -69,28 +68,6 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.nav-item {
-  position: relative;
-  cursor: pointer;
-}
-
-.nav-item::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -4px;
-  width: 0;
-  height: 2px;
-  background-color: #b42423;
-  transition: width 0.3s ease;
-}
-
-.nav-item:hover::after {
-  width: 100%;
-}
-/* header height = 80px */
-
-/* Overlay should NOT cover header */
 .menu-overlay {
   position: fixed;
   top: var(--header-h);
@@ -98,11 +75,35 @@
   right: 0;
   bottom: 0;
 
-  background: rgba(0, 0, 0, 0.4);
+  background: #fff;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
   z-index: 40;
+}
+.nav-item {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: #000;
+  transition: width 250ms ease;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.nav-item:hover {
+  cursor: pointer;
 }
 
 .menu-overlay.open {

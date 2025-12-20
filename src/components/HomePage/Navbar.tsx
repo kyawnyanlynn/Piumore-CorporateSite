@@ -35,10 +35,18 @@ export default function Navbar() {
           />
 
           <ul className="hidden md:flex gap-9 font-medium text-lg">
-            <li className="nav-item">企業情報</li>
-            <li className="nav-item">ブランド</li>
-            <li className="nav-item">お知らせ</li>
-            <li className="nav-item">採用情報</li>
+            <li>
+              <span className="nav-item">企業情報</span>
+            </li>
+            <li>
+              <span className="nav-item">ブランド</span>
+            </li>
+            <li>
+              <span className="nav-item">お知らせ</span>
+            </li>
+            <li>
+              <span className="nav-item">採用情報</span>
+            </li>
           </ul>
 
           <button
