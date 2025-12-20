@@ -5,6 +5,17 @@
     margin: 0;
     padding: 0;
   }
+  @media (hover: none) and (pointer: coarse) {
+    *:hover {
+      background-color: inherit !important;
+      color: inherit !important;
+      box-shadow: none !important;
+      transform: none !important;
+      opacity: 1 !important;
+      text-decoration: none !important;
+    }
+  }
+
   li {
     @apply p-4;
   }

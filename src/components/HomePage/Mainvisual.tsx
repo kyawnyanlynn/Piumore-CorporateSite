@@ -1,161 +1,98 @@
 import { kv1, kv2, kv3 } from "../../images";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import "../Css/mainvisual.css";
 
 const images = [kv1, kv2, kv3];
 
-const Mainvisual = () => {
+export default function Mainvisual() {
   const [index, setIndex] = useState(0);
 
-  // Auto change image every 3 seconds
   useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % images.length);
+    const id = setInterval(() => {
+      setIndex((p) => (p + 1) % images.length);
     }, 3000);
-
-    return () => clearInterval(interval);
+    return () => clearInterval(id);
   }, []);
 
   return (
-    <section className="relative w-screen min-h-screen bg-white overflow-hidden mt-20">
-      <div className="relative w-full">
-        <div className="slideshow-container ml-auto w-[70%] h-[calc(100vh-80px)] rounded-l-2xl overflow-hidden">
+    <section className="relative w-full bg-white overflow-x-hidden mt-20 h-[calc(100svh-80px)]">
+      <div className="relative w-full h-full">
+        <div className="relative w-full h-full md:ml-auto md:w-[70%] overflow-hidden md:rounded-l-2xl">
           {images.map((img, i) => (
             <img
               key={i}
               src={img}
-              className={`slideshow-image ${i === index ? "active" : ""}`}
               alt="main visual"
+              className={[
+                "absolute inset-0 w-full h-full object-cover block",
+                "transition-opacity duration-700 ease-in-out",
+                i === index ? "opacity-100" : "opacity-0",
+              ].join(" ")}
             />
           ))}
         </div>
+        <div
+          className="
+    absolute
+    left-4 top-8
+    flex items-start gap-4
+    md:left-[13%] md:top-1/2
+    md:-translate-y-1/2
+    md:translate-x-0
+    md:gap-6
+    lg:left-[18%] lg:top-1/2
 
-        <div className="absolute left-[17%] top-[50%] -translate-y-1/2 flex items-start gap-8">
-          <div
-            className="bg-[#B42423] w-[120px] h-[500px] opacity-0 flex pt-[15px] justify-center animate-slide-top-left"
-            style={{ animationDelay: "0.2s", writingMode: "vertical-rl" }}
-          >
-            <h1
-              className="font-bold text-[72px] text-white animate-slide-text opacity-0"
-              style={{
-                textOrientation: "upright",
-                letterSpacing: "10px",
-                animationDelay: "0.3s",
-              }}
-            >
-              現
-            </h1>
-            <h1
-              className="font-bold text-[72px] text-white animate-slide-text opacity-0"
-              style={{
-                textOrientation: "upright",
-                letterSpacing: "10px",
-                animationDelay: "0.4s",
-              }}
-            >
-              状
-            </h1>
-            <h1
-              className="font-bold text-[72px] text-white animate-slide-text opacity-0"
-              style={{
-                textOrientation: "upright",
-                letterSpacing: "10px",
-                animationDelay: "0.5s",
-              }}
-            >
-              を
-            </h1>
-            <h1
-              className="font-bold text-[72px] text-white animate-slide-text opacity-0"
-              style={{
-                textOrientation: "upright",
-                letterSpacing: "10px",
-                animationDelay: "0.6s",
-              }}
-            >
-              変
-            </h1>
-            <h1
-              className="font-bold text-[72px] text-white animate-slide-text opacity-0"
-              style={{
-                textOrientation: "upright",
-                letterSpacing: "10px",
-                animationDelay: "0.7s",
-              }}
-            >
-              え
-            </h1>
-            <h1
-              className="font-bold text-[72px] text-white animate-slide-text opacity-0"
-              style={{
-                textOrientation: "upright",
-                letterSpacing: "10px",
-                animationDelay: "0.8s",
-              }}
-            >
-              る
-            </h1>
-          </div>
-
-          <div
-            className="bg-[#B42423] w-[120px] h-[410px] flex pt-[15px] justify-center animate-slide-top-left"
-            style={{ animationDelay: "0s", writingMode: "vertical-rl" }}
-          >
-            <h1
-              className="font-bold text-[72px] text-white animate-slide-text opacity-0"
-              style={{
-                textOrientation: "upright",
-                letterSpacing: "10px",
-                animationDelay: "0.2s",
-              }}
-            >
-              飲
-            </h1>
-            <h1
-              className="font-bold text-[72px] text-white animate-slide-text opacity-0"
-              style={{
-                textOrientation: "upright",
-                letterSpacing: "10px",
-                animationDelay: "0.3s",
-              }}
-            >
-              食
-            </h1>
-            <h1
-              className="font-bold text-[72px] text-white animate-slide-text opacity-0"
-              style={{
-                textOrientation: "upright",
-                letterSpacing: "10px",
-                animationDelay: "0.4s",
-              }}
-            >
-              業
-            </h1>
-            <h1
-              className="font-bold text-[72px] text-white animate-slide-text opacity-0"
-              style={{
-                textOrientation: "upright",
-                letterSpacing: "10px",
-                animationDelay: "0.5s",
-              }}
-            >
-              界
-            </h1>
-            <h1
-              className="font-bold text-[72px] text-white animate-slide-text opacity-0"
-              style={{
-                textOrientation: "upright",
-                letterSpacing: "10px",
-                animationDelay: "0.6s",
-              }}
-            >
-              の
-            </h1>
-          </div>
+  "
+        >
+          <VerticalBadge text="現状を変える" delay="200ms" tall />
+          <VerticalBadge text="飲食業界の" delay="0ms" />
         </div>
       </div>
     </section>
   );
+}
+type VerticalBadgeProps = {
+  text: string;
+  delay?: string;
+  tall?: boolean;
 };
 
-export default Mainvisual;
+function VerticalBadge({
+  text,
+  delay = "0ms",
+  tall = false,
+}: VerticalBadgeProps) {
+  return (
+    <div
+      className={[
+        "bg-[#B42423] text-white font-bold",
+        "flex items-center justify-center",
+        "w-[52px] md:w-[72px] lg:w-[120px]",
+        tall
+          ? "h-[230px] md:h-[300px] lg:h-[500px]"
+          : "h-[190px] md:h-[260px] lg:h-[410px]",
+        "overflow-hidden",
+      ].join(" ")}
+      style={{
+        writingMode: "vertical-rl",
+        textOrientation: "upright",
+        letterSpacing: "10px",
+
+        opacity: 0,
+        animation: "badgeIn 0.8s cubic-bezier(0.5, 0.2, 0.3, 0.5) forwards",
+        animationDelay: delay,
+      }}
+    >
+      <span
+        className="text-[30px] md:text-[40px] lg:text-[72px] leading-none translate-y-1.5 md:translate-y-0"
+        style={{
+          opacity: 0,
+          animation: "textIn 0.8s ease-in-out forwards",
+          animationDelay: delay,
+        }}
+      >
+        {text}
+      </span>
+    </div>
+  );
+}

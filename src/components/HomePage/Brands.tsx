@@ -1,40 +1,49 @@
 import { katsuraLogo, hinoyaLogo, lauroLogo } from "../../images";
 import "../Css/brands.css";
+
 const Brands = () => {
   return (
-    <>
-      <div className="flex flex-col items-center mt-25 mb-25 p-10 bg-[#F8F8F8]">
-        <h2 className="text-4xl pt-15 pb-15">ブランド</h2>
-        <div className="w-full flex justify-around ">
-          <div className="flex-col">
-            <div className="images rounded-[15px] bg-white">
-              <img src={lauroLogo} className="rounded-[15px]"></img>
-            </div>
-            <p className="text-center text-[18px] pt-3">
-              神保町　オステリアラウロ（イタリア料理）
-            </p>
-          </div>
-
-          <div className="flex-col">
-            <div className="images rounded-[15px] bg-white">
-              <img src={katsuraLogo} className="rounded-[15px]"></img>
-            </div>
-            <p className="text-center text-[18px] pt-3">
-              神保町　かつら（和食・すき焼き）
-            </p>
-          </div>
+    <section className="w-full bg-[#F8F8F8] py-12 md:py-20">
+      <div className="mx-auto w-[92%] md:w-[75%]">
+        <h2 className="text-[28px] md:text-4xl text-center mb-10 md:mb-16">
+          ブランド
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          <BrandCard
+            img={lauroLogo}
+            label="神保町　オステリアラウロ（イタリア料理）"
+          />
+          <BrandCard
+            img={katsuraLogo}
+            label="神保町　かつら（和食・すき焼き）"
+          />
         </div>
-        <div className="flex flex-col items-center mt-10">
-          <h3 className="text-4xl pb-10">FC事業</h3>
-          <div className="images rounded-[15px]">
-            <img src={hinoyaLogo} className="rounded-[15px] bg-[#126436]"></img>
-          </div>
-          <p className="text-center text-[18px] pt-3">
-            大手町　日乃屋カレー（FC事業）
-          </p>
+
+        {/* FC Section */}
+        <div className="flex flex-col items-center mt-14 md:mt-20">
+          <h3 className="text-[26px] md:text-4xl mb-8 md:mb-10">FC事業</h3>
+          <BrandCard img={hinoyaLogo} label="大手町　日乃屋カレー（FC事業）" />
         </div>
       </div>
-    </>
+    </section>
   );
 };
+
 export default Brands;
+
+type BrandCardProps = {
+  img: string;
+  label: string;
+};
+
+function BrandCard({ img, label }: BrandCardProps) {
+  return (
+    <div className="flex flex-col items-center">
+      <div className="w-full rounded-[15px] overflow-hidden bg-white max-w-[420px]">
+        <img src={img} alt={label} className="w-full h-auto object-cover" />
+      </div>
+
+      <p className="text-center text-[16px] md:text-[18px] pt-3">{label}</p>
+    </div>
+  );
+}
