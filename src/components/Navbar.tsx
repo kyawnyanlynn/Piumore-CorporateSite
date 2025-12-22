@@ -1,7 +1,7 @@
 // Navbar.tsx
 import { useEffect, useState } from "react";
-import { logo } from "../../images";
-import "../Css/navbar.css";
+import { logo } from "../images";
+import "./navbar.css";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -36,16 +36,19 @@ export default function Navbar() {
 
           <ul className="hidden md:flex gap-9 font-medium text-lg">
             <li>
-              <span className="nav-item">企業情報</span>
+              <a className="nav-item">企業情報</a>
             </li>
             <li>
-              <span className="nav-item">ブランド</span>
+              <a className="nav-item">企業提携</a>
             </li>
             <li>
-              <span className="nav-item">お知らせ</span>
+              <a className="nav-item">ブランド</a>
             </li>
             <li>
-              <span className="nav-item">採用情報</span>
+              <a className="nav-item">お知らせ</a>
+            </li>
+            <li>
+              <a className="nav-item">採用情報</a>
             </li>
           </ul>
 
@@ -80,6 +83,9 @@ export default function Navbar() {
         <ul className="flex flex-col gap-8 px-8 pt-6 text-2xl font-medium items-center justify-between">
           <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
             企業情報
+          </li>
+          <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
+            企業提携
           </li>
           <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
             ブランド
