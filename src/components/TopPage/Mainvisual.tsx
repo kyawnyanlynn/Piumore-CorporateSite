@@ -1,6 +1,6 @@
 import { kv1, kv2, kv3 } from "../../images";
 import { useEffect, useState } from "react";
-import "./mainvisual.css";
+import "./css/mainvisual.css";
 
 const images = [kv1, kv2, kv3];
 

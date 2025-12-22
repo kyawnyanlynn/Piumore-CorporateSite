@@ -1,5 +1,5 @@
 import { recruitmentCircle, rightArrow } from "../../images/";
-import "./recruitment.css";
+import "./css/recruitment.css";
 
 const Recruitment = () => {
   return (

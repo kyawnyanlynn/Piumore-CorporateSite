@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { representative, rightArrow, rightArrowRed } from "../../images";
-import "./greeting.css";
+import "./css/greeting.css";
 
 const Greeting = () => {
   const [isHover, setIsHover] = useState(false);

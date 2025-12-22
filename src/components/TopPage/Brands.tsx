@@ -1,5 +1,5 @@
 import { katsuraLogo, hinoyaLogo, lauroLogo } from "../../images";
-import "./brands.css";
+import "./css/brands.css";
 
 const Brands = () => {
   return (
