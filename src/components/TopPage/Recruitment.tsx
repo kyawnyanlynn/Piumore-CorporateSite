@@ -1,5 +1,5 @@
 import { recruitmentCircle, rightArrow } from "../../images/";
-import "../Css/recruitment.css";
+import "./css/recruitment.css";
 
 const Recruitment = () => {
   return (
@@ -17,6 +17,7 @@ const Recruitment = () => {
 
           <button
             className="
+    cursor-pointer
     group
     relative
     bg-[#B42423]
@@ -29,7 +30,7 @@ const Recruitment = () => {
     transition-all duration-300
   "
           >
-            <span
+            <a
               className="
       text-white
       transition-transform duration-300
@@ -38,7 +39,7 @@ const Recruitment = () => {
     "
             >
               採用情報を見る
-            </span>
+            </a>
             <img
               src={rightArrow}
               alt=""

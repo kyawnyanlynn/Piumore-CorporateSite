@@ -1,6 +1,6 @@
 import { kv1, kv2, kv3 } from "../../images";
 import { useEffect, useState } from "react";
-import "../Css/mainvisual.css";
+import "./css/mainvisual.css";
 
 const images = [kv1, kv2, kv3];
 
@@ -84,7 +84,7 @@ function VerticalBadge({
       }}
     >
       <span
-        className="text-[30px] md:text-[40px] lg:text-[72px] leading-none translate-y-1.5 md:translate-y-0"
+        className="text-[28px] md:text-[40px] lg:text-[72px] leading-none translate-y-1.5 md:translate-y-0"
         style={{
           opacity: 0,
           animation: "textIn 0.8s ease-in-out forwards",
