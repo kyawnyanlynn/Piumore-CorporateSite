@@ -4,6 +4,7 @@ const LauroAbout = () => {
     return (
           <>
             <div className="flex flex-col items-center sm:my-20 leading-relaxed tracking-wide">
+              
                 <h2 className="text-center text-2xl sm:text-5xl  sm:mb-20 text-[#B42423] ">コンセプト</h2>
                 <div className="text-[18px]">
                      <p className="text-left px-[5%] sm:px-0 text-lg ">
