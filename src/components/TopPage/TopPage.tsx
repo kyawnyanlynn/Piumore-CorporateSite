@@ -22,7 +22,7 @@ function TopPage() {
         });
       },
       {
-        threshold: 0.2, // 20% of the section visible
+        threshold: 0.2,
       }
     );
 

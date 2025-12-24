@@ -10,11 +10,26 @@ export const Notice = defineType({
       type: 'string',
     }),
     defineField({
+      name: 'slug',
+      title: 'Slug',
+      type: 'slug',
+      options: {
+        source: 'header', // auto-generate from header
+        maxLength: 96,
+      },
+      validation: (Rule) => Rule.required(),
+    }),
+
+    defineField({
       name: 'date',
-      type: 'string',
+      type: 'date',
     }),
     defineField({
       name: 'content',
+      type: 'text',
+    }),
+    defineField({
+      name: 'author',
       type: 'string',
     }),
   ],

@@ -1,6 +1,8 @@
 // Navbar.tsx
 import { useEffect, useState } from "react";
 import { logo } from "../images";
+import { Link } from "react-router-dom";
+
 import "./navbar.css";
 
 export default function Navbar() {
@@ -27,12 +29,9 @@ export default function Navbar() {
     <>
       <header className="site-header fixed top-0 left-0 w-full h-20 bg-white z-1002">
         <div className="flex justify-between items-center w-full h-full max-w-[1240px] mx-auto px-4">
-          <img
-            src={logo}
-            alt="PIUMORE"
-            className="h-10 cursor-pointer"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          />
+          <Link to="/">
+            <img src={logo} alt="PIUMORE" className="h-10 cursor-pointer" />
+          </Link>
 
           <ul className="hidden md:flex gap-9 font-medium text-lg">
             <li>
@@ -45,7 +44,9 @@ export default function Navbar() {
               <a className="nav-item">ブランド</a>
             </li>
             <li>
-              <a className="nav-item">お知らせ</a>
+              <Link to="/notices" className="nav-item">
+                お知らせ
+              </Link>
             </li>
             <li>
               <a className="nav-item">採用情報</a>

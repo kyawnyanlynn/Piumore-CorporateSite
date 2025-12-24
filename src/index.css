@@ -4,8 +4,9 @@
     overflow-x: hidden;
     margin: 0;
     padding: 0;
+    font-family: "Noto Sans JP", sans-serif;
   }
-  @media (hover: none) and (pointer: coarse) {
+  /* @media (hover: none) and (pointer: coarse) {
     *:hover {
       background-color: inherit !important;
       color: inherit !important;
@@ -14,7 +15,7 @@
       opacity: 1 !important;
       text-decoration: none !important;
     }
-  }
+  } */
 
   li {
     @apply p-4;
