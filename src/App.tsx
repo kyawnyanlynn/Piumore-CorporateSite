@@ -1,19 +1,15 @@
-import LauroIndex from "./components/Brands/Lauro/LauroIndex";
-import "./App.css";
-import RecruitIntex from "./components/RecruitmentInformation/RecruitIntex";
-import KathuraIndex from "./components/Brands/kathura/KathuraIndex";
-import CompanyIndex from "./components/CompanyProfile/CompanyIndex";
-import FCIndex from "./components/ FCbusiness/FCIndex";
+import { Routes, Route } from "react-router-dom";
+import TopPage from "./components/TopPage/TopPage";
+import Notice from "./components/NoticePage/Notice";
+import Notices from "./components/Notices/Notices";
 
 function App() {
   return (
-    <>
-      {/* <LauroIndex /> */}
-      {/* <RecruitIntex /> */}
-      <KathuraIndex />
-      {/* <CompanyIndex /> */}
-      {/* <FCIndex /> */}
-    </>
+    <Routes>
+      <Route path="/" element={<TopPage />} />
+      <Route path="/notices" element={<Notices />} />
+      <Route path="/notices/:slug" element={<Notice />} />
+    </Routes>
   );
 }
 
