@@ -52,7 +52,7 @@ const LauroMenu = () => {
               className="w-full  h-full object-cover"
             />
           </div>
-          <h3 className="text-white text-xl font-semibold mb-2">国産和牛サーロインのタリアータ (200g).</h3>
+          <h3 className="text-white text-xl font-semibold mb-2">国産和牛サーロインのタリアータ (200g)</h3>
           <p className="text-white text-sm leading-relaxed px-4">
             厳選した国産和牛サーロインを、 絶妙な火入れで香ばしく焼き上げ、
             旨みを閉じ込め豪快に厚切りにしたタリアータ。
