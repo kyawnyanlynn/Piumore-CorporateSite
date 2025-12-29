@@ -1,0 +1,25 @@
+.footer-item {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.footer-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background: white; /* Footer is white text */
+  transition: width 250ms ease;
+  transform-origin: left;
+}
+
+.footer-item:hover::after {
+  width: 100%;
+}
+
+.footer-item:hover {
+  cursor: pointer;
+}

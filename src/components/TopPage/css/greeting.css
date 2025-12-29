@@ -1,0 +1,26 @@
+.quarter-circle {
+  position: absolute;
+  left: 33%;
+  top: 0;
+  z-index: -1;
+
+  width: 370px;
+  height: 350px;
+  background: #b42423;
+
+  border-radius: 100% 0% 0% 100%; /* quarter circle */
+  transform-origin: 100% 100%;
+  transform: scale(0);
+  transition: transform 0.4s ease-out;
+}
+
+.greet-message:hover {
+  color: white;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* 👇 Hover ONLY the text, activate the circle */
+.greet-message:hover ~ .quarter-circle {
+  transform: scale(1);
+}
