@@ -9,11 +9,13 @@ const RecruitIntex = () => {
   return (
     <>
       <Navbar />
-      <RercuitVisual />
-      <RecruitAbout />
-      <Recriutboss />
-      <Employeebenefits />
-      <Recruitflow />
+      <main className="pt-20">
+        <RercuitVisual />
+        <RecruitAbout />
+        <Recriutboss />
+        <Employeebenefits />
+        <Recruitflow />
+      </main>
     </>
   );
 };
