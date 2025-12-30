@@ -36,7 +36,7 @@ export default function Navbar() {
           <ul className="hidden md:flex gap-9 font-medium text-lg">
             <li>
               <Link to="/companyindex" className="nav-item">
-                企業提携
+                企業情報
               </Link>
             </li>
             <li>

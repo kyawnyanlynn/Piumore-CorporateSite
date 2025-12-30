@@ -16,7 +16,7 @@ function App() {
       <Route path="/fcindex" element={<FCIndex />} />
       <Route path="/companyindex" element={<CompanyIndex />} />
       <Route path="/recruitindex" element={<RecruitIndex />} />
-      <Route path="/katsura" element={<KatsuraIndex />} />
+      <Route path="/katsuraI" element={<KatsuraIndex />} />
       <Route path="/lauro" element={<LauroIndex />} />
       <Route path="/hinoya" element={<KatsuraIndex />} />
     </Routes>

@@ -14,13 +14,16 @@ const CompanyChallenge = () => {
                             <li>努力が正当に評価されているか？</li>
                         </ul>
                     </div>
-                    <div className="lg:w-1/2 flex  items-center justifuy-center gap-5">
+                    <div className="lg:w-1/2 flex flex-col  sm:flex-row  items-center justify-center gap-5">
                         <img 
                             src={Challenge_1} 
                             alt="" 
-                            className="w-[260px] h-[260px] object-cover rounded-lg"
+                            className="w-full max-w-[320px] sm:w-[260px] h-[260x] sm:h-[260px] object-cover rounded-lg"
                             />
-                        <img src={Challenge_2} alt="" />
+                        <img 
+                            src={Challenge_2} 
+                            className="w-full max-w-[320px] sm:w-[260px] h-[260px] object-cover rounded-lg"
+                            alt="" />
                     </div>
                 </div>
 
