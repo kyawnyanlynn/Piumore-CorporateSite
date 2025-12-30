@@ -1,5 +1,6 @@
 import { recruitmentCircle, rightArrow } from "../../images/";
 import "./css/recruitment.css";
+import { Link } from "react-router-dom";
 
 const Recruitment = () => {
   return (
@@ -14,48 +15,49 @@ const Recruitment = () => {
           <p className="text-[16px] md:text-[20px] mb-4 md:mb-5">
             発揮できる環境づくりを大切にしています。
           </p>
-
-          <button
-            className="
-    cursor-pointer
-    group
-    relative
-    bg-[#B42423]
-    h-11
-    w-[180px] md:w-[170px]
-    hover:md:w-[200px]
-    rounded-lg
-    flex items-center justify-center
-    overflow-hidden
-    transition-all duration-300
-  "
-          >
-            <a
+          <Link to="/recruitindex">
+            <button
               className="
-      text-white
-      transition-transform duration-300
-      group-hover:md:-translate-x-3
-      whitespace-nowrap
-    "
+            cursor-pointer
+            group
+            relative
+            bg-[#B42423]
+            h-11
+            w-[180px] md:w-[170px]
+            hover:md:w-[200px]
+            rounded-lg
+            flex items-center justify-center
+            overflow-hidden
+            transition-all duration-300
+            "
             >
-              採用情報を見る
-            </a>
-            <img
-              src={rightArrow}
-              alt=""
-              className="
-      absolute
-      right-6.5
-      w-4
-      opacity-0
-      translate-x-2
-      transition-all duration-300
-      group-hover:md:opacity-100
-      group-hover:md:translate-x-0
-      hidden md:block
-    "
-            />
-          </button>
+              <a
+                className="
+              text-white
+              transition-transform duration-300
+              group-hover:md:-translate-x-3
+              whitespace-nowrap
+              "
+              >
+                採用情報を見る
+              </a>
+              <img
+                src={rightArrow}
+                alt=""
+                className="
+              absolute
+              right-6.5
+              w-4
+              opacity-0
+              translate-x-2
+              transition-all duration-300
+              group-hover:md:opacity-100
+              group-hover:md:translate-x-0
+              hidden md:block
+              "
+              />
+            </button>
+          </Link>
         </div>
 
         {/* IMAGE */}

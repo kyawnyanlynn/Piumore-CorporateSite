@@ -50,10 +50,6 @@ function TopPage() {
       <section className="reveal">
         <Recruitment />
       </section>
-
-      <section className="reveal">
-        <Footer />
-      </section>
     </>
   );
 }
