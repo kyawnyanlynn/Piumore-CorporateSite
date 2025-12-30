@@ -14,7 +14,7 @@ const Recruitfow = () => {
             <div className="relative w-full max-w-xl">
 
                 <div className="absolute left-1/2 top-0 bottom-0 w-[2px] bg-black transform -translate-x-1/2" />
-                <div className="flex flex-col gap-10 ">
+                <div className="flex flex-col gap-10 mx-4 ">
                     {steps.map((step, index) => (
                         <div
                             key={index}
