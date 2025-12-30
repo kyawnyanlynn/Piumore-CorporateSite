@@ -11,11 +11,14 @@ const RecruitVisual = () => {
       <p
         className="
                 absolute 
-                top-10/12 
-                left-1/2 
+                top-9/12
+                sm:top-10/12 
+                left-3/4
+                sm:left-1/2 
                 transform -translate-x-24/25 -translate-y-1/
+                whitespace-nowrap
                  text-white 
-                 text-3xl sm:text-5xl 
+                 text-xl sm:text-5xl 
                  font-bold"
       >
         「もっと」を叶える場所へ
