@@ -1,4 +1,4 @@
-import { Recruit_lauro, Recruit_hinoya, Recruit_katsuya } from "../../images";
+import { Recruit_lauro, Recruit_hinoya, Recruit_katsura } from "../../images";
 
 const RecruitAbout = () => {
     return (
@@ -20,7 +20,7 @@ const RecruitAbout = () => {
                 </div>
                 <div>
                     <img 
-                        src={Recruit_katsuya} 
+                        src={Recruit_katsura} 
                         alt="かつら" 
                         className="w-full h-48 object-cover rounded-lg"
                         />
