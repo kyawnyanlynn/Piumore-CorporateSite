@@ -1,7 +1,7 @@
 export { default as menu } from "./menu.svg";
 export { default as close } from "./close.svg";
 export { default as logo } from "./logo.jpg";
-<<<<<<< HEAD
+
 export { default as Kv_Lauro } from "./Kv_Lauro.png";
 export { default as lauro_food } from "./lauro_food.png";
 export { default as lauro_shop } from "./lauro_shop.png";
@@ -30,7 +30,7 @@ export { default as katsuya_menu1 } from "./katsuya_menu1.jpg";
 export { default as katsuya_menu2 } from "./katsuya_menu2.jpg";
 export { default as katsuya_menu3 } from "./katsuya_menu3.jpg";
 
-=======
+
 export { default as partnerPhoto1 } from "./12.png";
 export { default as partnerPhoto2 } from "./17.png";
 export { default as high } from "./high.svg";
@@ -52,4 +52,4 @@ export { default as piumoreBack } from "./piumore_back.png";
 export { default as rightArrow } from "./right_arrow.svg";
 export { default as rightArrowRed } from "./right_arrow_red.svg";
 export { default as recruitmentCircle } from "./recruitment.png";
->>>>>>> origin/main
+
