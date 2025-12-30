@@ -2,7 +2,7 @@
 
 
 
-const KathuraAbout = () => {
+const KatsuraAbout = () => {
     return (
           <>
             <div className="flex flex-col items-center sm:my-20 leading-relaxed tracking-wide">
@@ -21,4 +21,4 @@ const KathuraAbout = () => {
     )
 }
 
-export default KathuraAbout;
+export default KatsuraAbout;

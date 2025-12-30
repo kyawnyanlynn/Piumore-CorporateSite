@@ -1,6 +1,6 @@
-import { katsuya_menu1, katsuya_menu2, katsuya_menu3 } from "../../../images";
+import { katsura_menu1, katsura_menu2, katsura_menu3 } from "../../../images";
 
-const KathuraMenu = () => {
+const KatsuraMenu = () => {
   return (
     <div className="w-full bg-[#9F3A2E]  px-6 sm:pb-15">
       <h2 className="text-white text-3xl font-bold text-center  py-8">
@@ -12,7 +12,7 @@ const KathuraMenu = () => {
         <div>
           <div className="w-full aspect-[1/1]  md:aspect-[4/4] mb-4 overflow-hidden rounded-lg bg-black">
             <img
-              src={katsuya_menu1}
+              src={katsura_menu1}
               alt="AAAの写真"
               className="w-full  h-full object-cover"
             />
@@ -28,7 +28,7 @@ const KathuraMenu = () => {
         <div className="pb-15 sm:pb-0">
           <div className="w-full aspect-[1/1]  md:aspect-[4/4]  mb-4 overflow-hidden rounded-lg bg-black ">
             <img
-              src={katsuya_menu2}
+              src={katsura_menu2}
               alt="BBBの写真"
               className="w-full  h-full object-cover"
             />
@@ -45,7 +45,7 @@ const KathuraMenu = () => {
         <div className="pb-25 sm:pb-0">
           <div className="w-full aspect-[1/1]  md:aspect-[4/4]  mb-4 overflow-hidden rounded-lg bg-black ">
             <img
-              src={katsuya_menu3}
+              src={katsura_menu3}
               alt="CCCの写真"
               className="w-full  h-full object-cover"
             />
@@ -60,4 +60,4 @@ const KathuraMenu = () => {
   );
 };
 
-export default KathuraMenu;
+export default KatsuraMenu;

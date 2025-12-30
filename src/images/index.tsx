@@ -1,6 +1,7 @@
 export { default as menu } from "./menu.svg";
 export { default as close } from "./close.svg";
 export { default as logo } from "./logo.jpg";
+
 export { default as Kv_Lauro } from "./Kv_Lauro.png";
 export { default as lauro_food } from "./lauro_food.png";
 export { default as lauro_shop } from "./lauro_shop.png";
@@ -9,12 +10,12 @@ export { default as lauro_day_people } from "./lauro_day_people.png";
 export { default as recruitPeople } from "./recruitPeoples.png";
 export { default as KV_Recruitment } from "./KV_Recruitment.png";
 export { default as Recruit_lauro } from "./Recruit_lauro.png";
-export { default as Recruit_katsuya } from "./Recruit_katsuya.png";
+export { default as Recruit_katsura } from "./Recruit_katsura.png";
 export { default as Recruit_hinoya } from "./Recruit_hinoya.png";
 export { default as Recruit_boss } from "./Recruit_boss.png";
 export { default as KV_Kathura } from "./KV_Kathura.png";
-export { default as Kathura_food } from "./Kathura_food.png";
-export { default as Kathura_shop } from "./Kathura_shop.png";
+export { default as Katsura_food } from "./Katsura_food.png";
+export { default as Katsura_shop } from "./Katsura_shop.png";
 export { default as Management_1 } from "./Management_1.png";
 export { default as Management_2 } from "./Management_2.png";
 export { default as Challenge_1 } from "./Challenge_1.png";
@@ -25,9 +26,10 @@ export { default as FCbusiness_3 } from "./FCbusiness_3.png";
 export { default as lauro_menu2 } from "./lauro_menu2.jpg";
 export { default as lauro_menu3 } from "./lauro_menu3.jpg";
 export { default as lauro_menu4 } from "./lauro_menu4.jpg";
-export { default as katsuya_menu1 } from "./katsuya_menu1.jpg";
-export { default as katsuya_menu2 } from "./katsuya_menu2.jpg";
-export { default as katsuya_menu3 } from "./katsuya_menu3.jpg";
+export { default as katsura_menu1 } from "./katsura_menu1.jpg";
+export { default as katsura_menu2 } from "./katsura_menu2.jpg";
+export { default as katsura_menu3 } from "./katsura_menu3.jpg";
+
 export { default as partnerPhoto1 } from "./12.png";
 export { default as partnerPhoto2 } from "./17.png";
 export { default as high } from "./high.svg";
