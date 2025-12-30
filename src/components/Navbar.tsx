@@ -35,10 +35,14 @@ export default function Navbar() {
 
           <ul className="hidden md:flex gap-9 font-medium text-lg">
             <li>
-              <a className="nav-item">企業情報</a>
+              <Link to="/companyindex" className="nav-item">
+                企業提携
+              </Link>
             </li>
             <li>
-              <a className="nav-item">企業提携</a>
+              <Link to="/fcindex" className="nav-item">
+                企業提携
+              </Link>
             </li>
             <li>
               <a className="nav-item">ブランド</a>
@@ -49,7 +53,9 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <a className="nav-item">採用情報</a>
+              <Link to="/recruitindex" className="nav-item">
+                採用情報
+              </Link>
             </li>
           </ul>
 
@@ -101,6 +107,7 @@ export default function Navbar() {
       </nav>
     </>
   );
+
 
 }
 

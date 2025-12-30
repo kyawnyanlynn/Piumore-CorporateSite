@@ -1,5 +1,5 @@
+import { Link } from "react-router-dom";
 import { piumoreBack } from "../../images";
-
 const About = () => {
   return (
     <section className="relative w-full flex justify-center mt-40">
@@ -37,10 +37,11 @@ const About = () => {
               を目指しています。
             </p>
           </div>
-
-          <a className="underline mt-6 inline-block" href="">
-            会社概要はこちら
-          </a>
+          <Link to="/companyindex">
+            <a className="underline mt-6 inline-block" href="">
+              会社概要はこちら
+            </a>
+          </Link>
         </div>
       </div>
     </section>
