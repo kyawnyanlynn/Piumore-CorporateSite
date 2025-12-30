@@ -5,6 +5,10 @@ import { Link } from "react-router-dom";
 
 import "./navbar.css";
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/main
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -101,4 +105,8 @@ export default function Navbar() {
       </nav>
     </>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> origin/main

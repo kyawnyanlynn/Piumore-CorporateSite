@@ -1,0 +1,47 @@
+/* ▼ Swiper 全体の overflow を解除（必須） */
+.scale-swiper {
+  overflow: visible !important;
+}
+
+/* ▼ 左右スライド（非アクティブ）を小さく */
+.scale-swiper .swiper-slide {
+  transition: all 0.4s;
+  transform: scale(0.8);
+  opacity: 0.5;
+}
+
+/* ▼ 真ん中のスライドだけ大きく */
+.scale-swiper .swiper-slide-active {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* ▼ ナビゲーションボタン位置を「下中央」にする */
+.scale-swiper .swiper-button-prev,
+.scale-swiper .swiper-button-next {
+  top: auto !important;
+  bottom: -70px !important;
+  width: 30px !important;
+  height: 20px !important;
+  z-index: 100 !important; /* ← ドットより上 */
+  color: #b42423 !important;
+  /* ↓ これが中央に寄せるための最重要設定 */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 左矢印を左へ */
+.scale-swiper .swiper-button-prev {
+  margin-left: -100px; /* 調整OK */
+}
+
+/* 右矢印を右へ */
+.scale-swiper .swiper-button-next {
+  margin-left: 100px;
+}
+
+/* ▼ ページネーション（丸ポチ） */
+.scale-swiper .swiper-pagination {
+  bottom: -70px !important;
+}
+

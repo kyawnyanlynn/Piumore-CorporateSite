@@ -1,6 +1,36 @@
 export { default as menu } from "./menu.svg";
 export { default as close } from "./close.svg";
 export { default as logo } from "./logo.jpg";
+<<<<<<< HEAD
+export { default as Kv_Lauro } from "./Kv_Lauro.png";
+export { default as lauro_food } from "./lauro_food.png";
+export { default as lauro_shop } from "./lauro_shop.png";
+export { default as lauro_menu1 } from "./lauro_menu1.png";
+export { default as lauro_day_people} from "./lauro_day_people.png";
+export { default as recruitPeople } from "./recruitPeoples.png";
+export { default as KV_Recruitment } from "./KV_Recruitment.png";
+export { default as Recruit_lauro } from "./Recruit_lauro.png"; 
+export { default as Recruit_katsuya } from "./Recruit_katsuya.png";
+export { default as Recruit_hinoya } from "./Recruit_hinoya.png";
+export { default as Recruit_boss } from "./Recruit_boss.png";
+export { default as KV_Kathura } from "./KV_Kathura.png";
+export { default as Kathura_food } from "./Kathura_food.png";  
+export { default as Kathura_shop } from "./Kathura_shop.png";
+export { default as Management_1 } from "./Management_1.png";
+export { default as Management_2 } from "./Management_2.png";
+export { default as Challenge_1 } from "./Challenge_1.png";
+export { default as Challenge_2 } from "./Challenge_2.png";
+export { default as FCbusiness_1 } from "./FCbusiness_1.png";
+export { default as FCbusiness_2 } from "./FCbusiness_2.png";
+export { default as FCbusiness_3 } from "./FCbusiness_3.png";
+export { default as lauro_menu2 } from "./lauro_menu2.jpg";
+export { default as lauro_menu3 } from "./lauro_menu3.jpg";
+export { default as lauro_menu4 } from "./lauro_menu4.jpg";
+export { default as katsuya_menu1 } from "./katsuya_menu1.jpg";
+export { default as katsuya_menu2 } from "./katsuya_menu2.jpg";
+export { default as katsuya_menu3 } from "./katsuya_menu3.jpg";
+
+=======
 export { default as partnerPhoto1 } from "./12.png";
 export { default as partnerPhoto2 } from "./17.png";
 export { default as high } from "./high.svg";
@@ -22,3 +52,4 @@ export { default as piumoreBack } from "./piumore_back.png";
 export { default as rightArrow } from "./right_arrow.svg";
 export { default as rightArrowRed } from "./right_arrow_red.svg";
 export { default as recruitmentCircle } from "./recruitment.png";
+>>>>>>> origin/main
