@@ -5,7 +5,7 @@ import Notices from "./components/Notices/Notices";
 import FCIndex from "./components/FCbusiness/FCIndex";
 import RecruitIndex from "./components/RecruitmentInformation/RecruitIndex";
 import CompanyIndex from "./components/CompanyProfile/CompanyIndex";
-import KathuraIndex from "./components/Brands/kathura/KathuraIndex";
+import KatsuraIndex from "./components/Brands/katsura/katsuraIndex";
 import LauroIndex from "./components/Brands/Lauro/LauroIndex";
 function App() {
   return (
@@ -16,9 +16,9 @@ function App() {
       <Route path="/fcindex" element={<FCIndex />} />
       <Route path="/companyindex" element={<CompanyIndex />} />
       <Route path="/recruitindex" element={<RecruitIndex />} />
-      <Route path="/katsura" element={<KathuraIndex />} />
+      <Route path="/katsura" element={<KatsuraIndex />} />
       <Route path="/lauro" element={<LauroIndex />} />
-      <Route path="/hinoya" element={<KathuraIndex />} />
+      <Route path="/hinoya" element={<KatsuraIndex />} />
     </Routes>
   );
 }

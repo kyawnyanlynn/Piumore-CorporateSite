@@ -1,6 +1,6 @@
 import { katsura_menu1, katsura_menu2, katsura_menu3 } from "../../../images";
 
-const KathuraMenu = () => {
+const KatsuraMenu = () => {
   return (
     <div className="w-full bg-[#9F3A2E]  px-6 sm:pb-15">
       <h2 className="text-white text-3xl font-bold text-center  py-8">
@@ -60,4 +60,4 @@ const KathuraMenu = () => {
   );
 };
 
-export default KathuraMenu;
+export default KatsuraMenu;

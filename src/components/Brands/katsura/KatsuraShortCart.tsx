@@ -1,6 +1,6 @@
-import { Kathura_food, Kathura_shop } from "../../../images";
+import { Katsura_food, Katsura_shop } from "../../../images";
 
-const KathuraShortCart = () => {
+const KatsuraShortCart = () => {
   return (
     <>
       <div className="w-full px-[5%] lg:px-[10%]   flex justify-center mb-20">
@@ -22,12 +22,12 @@ const KathuraShortCart = () => {
 
           <div className="relative w-full sm:w-[55%] aspect-[4/3] overflow-visible">
             <img
-              src={Kathura_food}
+              src={Katsura_food}
               alt="料理"
               className="w-full md:w-[55%] lg:w-[65%]  static sm:absolute md:top-8 md:left-10   lg:top-10 object-cover rounded-lg "
             />
             <img
-              src={Kathura_shop}
+              src={Katsura_shop}
               alt="店舗"
               className="w-full md:w-[55%] lg:w-[65%] static sm:absolute md:left-40 lg:left-55  md:translate-y-[200px]  object-cover rounded-lg mt-4 sm:mt-0"
             />
@@ -37,4 +37,4 @@ const KathuraShortCart = () => {
     </>
   );
 };
-export default KathuraShortCart;
+export default KatsuraShortCart;

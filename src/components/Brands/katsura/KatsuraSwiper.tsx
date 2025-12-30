@@ -4,6 +4,6 @@ import { lauro_day_people, lauro_food, lauro_shop, lauro_menu1, logo } from "../
 
 const images = [lauro_day_people, lauro_food, lauro_shop, lauro_menu1, logo];
 
-export default function KathuraSwiper() {
+export default function KatsuraSwiper() {
   return <Swipercontent images={images} />;
 }
