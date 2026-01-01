@@ -1,3 +1,18 @@
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-y: auto;
+}
+
+#root {
+  min-height: 100vh;
+  overflow: visible;
+  height: auto;
+}
 .reveal {
   opacity: 0;
   transform: translateY(40px);

@@ -22,9 +22,12 @@ const Brands = () => {
             label="神保町　かつら（和食・すき焼き）"
           />
         </div>
-        <a className="block text-end text-[17px] pointer" href="">
+        <Link
+          to="/brandscollection"
+          className="block text-end text-[17px] pointer"
+        >
           ブランド一覧
-        </a>
+        </Link>
         {/* FC Section */}
         <div className="flex flex-col items-center mt-14 md:mt-20">
           <h3 className="text-[26px] md:text-4xl mb-8 md:mb-10">FC事業</h3>

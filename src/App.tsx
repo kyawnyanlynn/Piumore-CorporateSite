@@ -8,6 +8,7 @@ import CompanyIndex from "./components/CompanyProfile/CompanyIndex";
 import KatsuraIndex from "./components/Brands/katsura/KatsuraIndex";
 import LauroIndex from "./components/Brands/Lauro/LauroIndex";
 import MessageSection from "./components/Greeting/Message";
+import BrandsCollection from "./components/Brands/BrandsCollection/BrandsCollection";
 function App() {
   return (
     <Routes>
@@ -21,6 +22,7 @@ function App() {
       <Route path="/lauro" element={<LauroIndex />} />
       <Route path="/hinoya" element={<FCIndex />} />
       <Route path="/message" element={<MessageSection />} />
+      <Route path="/brandscollection" element={<BrandsCollection />} />
     </Routes>
   );
 }

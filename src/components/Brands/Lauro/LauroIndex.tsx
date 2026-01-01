@@ -7,18 +7,22 @@ import LauroSwiper from "./LauroSwper";
 import BrandsButton from "../BrandsButton";
 import Navbar from "../../Navbar";
 import Recruitment from "../../TopPage/Recruitment";
+import Footer from "../../Footer";
 
 const BrandsIndex = () => {
   return (
     <>
       <Navbar />
-      <BrandsVisual imge={Kv_Lauro} />
-      <LauroAbout />
-      <LauroShortCart />
-      <LauroMenu />
-      <LauroSwiper />
-      <BrandsButton />
-      <Recruitment />
+      <main>
+        <BrandsVisual imge={Kv_Lauro} />
+        <LauroAbout />
+        <LauroShortCart />
+        <LauroMenu />
+        <LauroSwiper />
+        <BrandsButton />
+        <Recruitment />
+      </main>
+      <Footer />
     </>
   );
 };

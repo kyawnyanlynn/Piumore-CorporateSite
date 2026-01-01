@@ -4,18 +4,20 @@ import Recriutboss from "./Recruitboss";
 import Employeebenefits from "./Employeebenefits";
 import Recruitflow from "./Recruitflow";
 import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 const RecruitIntex = () => {
   return (
     <>
       <Navbar />
-      <main className="pt-20">
+      <main>
         <RercuitVisual />
         <RecruitAbout />
         <Recriutboss />
         <Employeebenefits />
         <Recruitflow />
       </main>
+      <Footer />
     </>
   );
 };

@@ -1,3 +1,3 @@
 import {Notice} from './Notice'
-
-export const schemaTypes = [Notice]
+import {Brands} from './Brands'
+export const schemaTypes = [Notice, Brands]

@@ -7,7 +7,7 @@ import KatsuraSwiper from "./katsuraSwiper";
 // import KathuraShortCart from "./katsuraShortCart";
 // import KathuraMenu from "./katsuraMenu";
 // import KathuraSwiper from "./katsuraSwiper";
-
+import Footer from "../../Footer";
 import BrandsButton from "../BrandsButton";
 import Navbar from "../../Navbar";
 import Recruitment from "../../TopPage/Recruitment";
@@ -16,15 +16,18 @@ const KathuraIndex = () => {
   return (
     <>
       <Navbar />
-      <BrandsVisual imge={KV_Kathura} />
-      <KathuraAbout />
-      <KatsuraShortCart />
-      <KatsuraMenu />
-      <KatsuraSwiper />
-      {/* <KathuraMenu /> */}
-      {/* <KathuraSwiper /> */}
-      <BrandsButton />
-      <Recruitment />
+      <main>
+        <BrandsVisual imge={KV_Kathura} />
+        <KathuraAbout />
+        <KatsuraShortCart />
+        <KatsuraMenu />
+        <KatsuraSwiper />
+        {/* <KathuraMenu /> */}
+        {/* <KathuraSwiper /> */}
+        <BrandsButton />
+        <Recruitment />
+      </main>
+      <Footer />
     </>
   );
 };
