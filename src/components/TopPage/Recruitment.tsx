@@ -15,7 +15,15 @@ const Recruitment = () => {
           <p className="text-[16px] md:text-[20px] mb-4 md:mb-5">
             発揮できる環境づくりを大切にしています。
           </p>
-          <Link to="/recruitindex">
+          <Link
+            to="/recruitindex"
+            className="
+              text-white
+              transition-transform duration-300
+              group-hover:md:-translate-x-3
+              whitespace-nowrap
+              "
+          >
             <button
               className="
             cursor-pointer
@@ -31,16 +39,7 @@ const Recruitment = () => {
             transition-all duration-300
             "
             >
-              <a
-                className="
-              text-white
-              transition-transform duration-300
-              group-hover:md:-translate-x-3
-              whitespace-nowrap
-              "
-              >
-                採用情報を見る
-              </a>
+              採用情報を見る
               <img
                 src={rightArrow}
                 alt=""

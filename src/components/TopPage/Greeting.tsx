@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { representative, rightArrow, rightArrowRed } from "../../images";
 import "./css/greeting.css";
+import { Link } from "react-router-dom";
 
 const Greeting = () => {
   const [isHover, setIsHover] = useState(false);
@@ -56,9 +57,12 @@ const Greeting = () => {
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
           >
-            <a className="flex items-center justify-end gap-2 text-[16px] md:text-[20px] z-10 border-none">
+            <Link
+              to="/message"
+              className="flex items-center justify-end gap-2 text-[16px] md:text-[20px] z-10 border-none"
+            >
               メッセージを読む
-            </a>
+            </Link>
             <img
               className="w-4 md:w-5"
               src={isHover ? rightArrow : rightArrowRed}

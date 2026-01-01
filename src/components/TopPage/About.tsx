@@ -37,10 +37,8 @@ const About = () => {
               を目指しています。
             </p>
           </div>
-          <Link to="/companyindex">
-            <a className="underline mt-6 inline-block" href="">
-              会社概要はこちら
-            </a>
+          <Link to="/companyindex" className="underline mt-6 inline-block">
+            会社概要はこちら
           </Link>
         </div>
       </div>

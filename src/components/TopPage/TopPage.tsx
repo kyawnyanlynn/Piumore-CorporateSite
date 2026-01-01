@@ -1,11 +1,11 @@
 import Navbar from "../Navbar";
 import Mainvisual from "./Mainvisual";
-import Notice from "./Notice";
 import About from "./About";
 import Greeting from "./Greeting";
 import Brands from "./Brands";
 import Recruitment from "./Recruitment";
 import Footer from "../Footer";
+import Notices from "./Notices";
 
 import "../../App.css";
 import { useEffect } from "react";
@@ -42,7 +42,9 @@ function TopPage() {
       <section className="reveal">
         <Greeting />
       </section>
-
+      <section className="reveal">
+        <Notices />
+      </section>
       <section className="reveal">
         <Brands />
       </section>
