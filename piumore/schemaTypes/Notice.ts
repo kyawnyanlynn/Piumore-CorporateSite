@@ -6,7 +6,7 @@ export const Notice = defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'header',
+      name: 'タイトル',
       type: 'string',
     }),
     defineField({
@@ -21,15 +21,15 @@ export const Notice = defineType({
     }),
 
     defineField({
-      name: 'date',
+      name: '日付け',
       type: 'date',
     }),
     defineField({
-      name: 'content',
+      name: 'コンテンツ',
       type: 'text',
     }),
     defineField({
-      name: 'author',
+      name: '著者',
       type: 'string',
     }),
   ],
