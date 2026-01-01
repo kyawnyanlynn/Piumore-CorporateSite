@@ -36,7 +36,7 @@ export default function Navbar() {
           <ul className="hidden md:flex gap-9 font-medium text-lg">
             <li>
               <Link to="/companyindex" className="nav-item">
-                企業提携
+                企業情報
               </Link>
             </li>
             <li>
@@ -45,7 +45,9 @@ export default function Navbar() {
               </Link>
             </li>
             <li>
-              <a className="nav-item">ブランド</a>
+              <Link to="/brandscollection" className="nav-item">
+                ブランド
+              </Link>
             </li>
             <li>
               <Link to="/notices" className="nav-item">
@@ -76,38 +78,45 @@ export default function Navbar() {
       <div
         className={`menu-overlay md:hidden ${isOpen ? "open" : ""}`}
         onClick={() => setIsOpen(false)}
-        aria-hidden="true"
       />
 
       <nav
         className={`offscreen-menu md:hidden ${
           isOpen ? "open" : ""
         } flex items-center justify-center`}
-        aria-hidden={!isOpen}
       >
         <div className="h-20" />
 
         <ul className="flex flex-col gap-8 px-8 pt-6 text-2xl font-medium items-center justify-between">
           <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
-            企業情報
+            <Link to="/companyindex" className="nav-item">
+              企業情報
+            </Link>
           </li>
           <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
-            企業提携
+            <Link to="/fcindex" className="nav-item">
+              企業提携
+            </Link>
           </li>
-          <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
+          <Link
+            to="/brandscollection"
+            className="cursor-pointer"
+            onClick={() => setIsOpen(false)}
+          >
             ブランド
+          </Link>
+          <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
+            <Link to="/notices" className="nav-item">
+              お知らせ
+            </Link>
           </li>
           <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
-            お知らせ
-          </li>
-          <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
-            採用情報
+            <Link to="/recruitindex" className="nav-item">
+              採用情報
+            </Link>
           </li>
         </ul>
       </nav>
     </>
   );
-
-
 }
-

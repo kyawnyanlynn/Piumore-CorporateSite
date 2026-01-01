@@ -1,15 +1,12 @@
-
-
 const CompanyAbout = () => {
   return (
-    <div className="px-[5%] sm:px-[10%] py-10 text-lg">
+    <div className="px-[5%] sm:px-[10%] py-10 text-lg mt-[70px]">
       {/* タイトル */}
       <h2 className="text-3xl sm:text-4xl font-bold text-[#B42423] mb-10">
         会社概要
       </h2>
 
       <div className="divide-y divide-gray-300 border-b border-gray-300 ">
-        
         <div className="py-4 flex flex-col sm:flex-row">
           <span className="w-full sm:w-1/4 font-semibold">会社名</span>
           <span className="w-full sm:w-3/4">【株式会社PIUMORE】</span>
@@ -29,9 +26,7 @@ const CompanyAbout = () => {
 
         <div className="py-4 flex flex-col sm:flex-row">
           <span className="w-full sm:w-1/4 font-semibold">従業員数</span>
-          <span className="w-full sm:w-3/4">
-            【35名】（2025年10月時点）
-          </span>
+          <span className="w-full sm:w-3/4">【35名】（2025年10月時点）</span>
         </div>
 
         <div className="py-4 flex flex-col sm:flex-row">

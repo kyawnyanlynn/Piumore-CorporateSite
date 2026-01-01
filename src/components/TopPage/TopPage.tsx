@@ -34,24 +34,28 @@ function TopPage() {
   return (
     <>
       <Navbar />
-      <Mainvisual />
-      <section className="reveal">
-        <About />
-      </section>
+      <main>
+        <Mainvisual />
+        <section className="reveal">
+          <About />
+        </section>
 
-      <section className="reveal">
-        <Greeting />
-      </section>
-      <section className="reveal">
-        <Notices />
-      </section>
-      <section className="reveal">
-        <Brands />
-      </section>
+        <section className="reveal">
+          <Greeting />
+        </section>
+        <section className="reveal">
+          <Notices />
+        </section>
+        <section className="reveal">
+          <Brands />
+        </section>
 
-      <section className="reveal">
-        <Recruitment />
-      </section>
+        <section className="reveal">
+          <Recruitment />
+        </section>
+      </main>
+
+      <Footer />
     </>
   );
 }
