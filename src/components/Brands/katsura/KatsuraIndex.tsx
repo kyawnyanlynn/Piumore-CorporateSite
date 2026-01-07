@@ -24,7 +24,7 @@ const KathuraIndex = () => {
         <KatsuraSwiper />
         {/* <KathuraMenu /> */}
         {/* <KathuraSwiper /> */}
-        <BrandsButton />
+        <BrandsButton href="https://www.hotpepper.jp/strJ003959138/" />
         <Recruitment />
       </main>
       <Footer />

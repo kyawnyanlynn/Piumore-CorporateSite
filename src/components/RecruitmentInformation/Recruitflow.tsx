@@ -36,7 +36,15 @@ const Recruitfow = () => {
           ))}
         </div>
       </div>
-      <button className="mt-16 bg-[#B42423] text-white rounded-full px-20 py-4">
+      <button
+        className="mt-16 bg-[#B42423] text-white rounded-full px-20 py-4 cursor-pointer"
+        onClick={() =>
+          window.open(
+            "https://www.careermap.jp/corporations/108006/jobs",
+            "_blank"
+          )
+        }
+      >
         エントリーする
       </button>
     </div>

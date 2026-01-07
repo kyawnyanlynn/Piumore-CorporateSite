@@ -19,7 +19,7 @@ const BrandsIndex = () => {
         <LauroShortCart />
         <LauroMenu />
         <LauroSwiper />
-        <BrandsButton />
+        <BrandsButton href="https://osterialaurojinbocho.owst.jp/" />
         <Recruitment />
       </main>
       <Footer />
