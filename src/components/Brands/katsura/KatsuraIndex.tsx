@@ -1,9 +1,9 @@
 import BrandsVisual from "../BrandsVisual";
 import { KV_Kathura } from "../../../images";
-import KathuraAbout from "./katsuraAbout";
-import KatsuraShortCart from "./katsuraShortCart";
-import KatsuraMenu from "./katsuraMenu";
-import KatsuraSwiper from "./katsuraSwiper";
+import KathuraAbout from "./KatsuraAbout";
+import KatsuraShortCart from "./KatsuraShortCart";
+import KatsuraMenu from "./KatsuraMenu";
+import KatsuraSwiper from "./KatsuraSwiper";
 // import KathuraShortCart from "./katsuraShortCart";
 // import KathuraMenu from "./katsuraMenu";
 // import KathuraSwiper from "./katsuraSwiper";
