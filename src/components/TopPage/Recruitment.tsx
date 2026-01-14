@@ -1,7 +1,6 @@
 import { recruitmentCircle, rightArrow } from "../../images/";
 import "./css/recruitment.css";
 import { Link } from "react-router-dom";
-
 const Recruitment = () => {
   return (
     <section className="w-full mt-12 md:mt-20 mb-12 md:mb-20">
@@ -17,45 +16,40 @@ const Recruitment = () => {
           </p>
           <Link
             to="/recruitindex"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
             className="
-              text-white
-              transition-transform duration-300
-              group-hover:md:-translate-x-3
-              whitespace-nowrap
-              "
+    cursor-pointer
+    group
+    relative
+    bg-[#B42423]
+    h-11
+    w-[180px] md:w-[170px]
+    hover:md:w-[200px]
+    rounded-lg
+    flex items-center justify-center
+    overflow-hidden
+    transition-all duration-300
+    text-white
+    whitespace-nowrap
+  "
           >
-            <button
+            採用情報を見る
+            <img
+              src={rightArrow}
+              alt=""
               className="
-            cursor-pointer
-            group
-            relative
-            bg-[#B42423]
-            h-11
-            w-[180px] md:w-[170px]
-            hover:md:w-[200px]
-            rounded-lg
-            flex items-center justify-center
-            overflow-hidden
-            transition-all duration-300
-            "
-            >
-              採用情報を見る
-              <img
-                src={rightArrow}
-                alt=""
-                className="
-              absolute
-              right-6.5
-              w-4
-              opacity-0
-              translate-x-2
-              transition-all duration-300
-              group-hover:md:opacity-100
-              group-hover:md:translate-x-0
-              hidden md:block
-              "
-              />
-            </button>
+      absolute right-6.5 w-4
+      opacity-0 translate-x-2
+      transition-all duration-300
+      group-hover:md:opacity-100
+      group-hover:md:translate-x-0
+      hidden md:block
+    "
+            />
           </Link>
         </div>
 

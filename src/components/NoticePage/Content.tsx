@@ -1,12 +1,12 @@
 import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
-import Client from "../../Client";
+import Client from "../../client";
 
 type NoticeDetail = {
-  header: string;
-  content: string;
-  date?: string;
-  author?: string;
+  Title: string;
+  Content: string;
+  Date?: string;
+  Author?: string;
 };
 
 const Content = () => {
@@ -21,10 +21,10 @@ const Content = () => {
 
     Client.fetch(
       `*[_type == "notice" && slug.current == $slug][0]{
-        header,
-        content,
-        date,
-        author
+        Title,
+        Content,
+        Date,
+        Author
       }`,
       { slug }
     )
@@ -61,14 +61,14 @@ const Content = () => {
       <div className="mx-auto max-w-5xl px-6 py-16">
         {/* Title */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight leading-snug">
-          {notice.header}
+          {notice.Title}
         </h1>
 
         {/* Meta */}
         <div className="mt-10 flex items-center gap-12 text-sm text-gray-700 font-medium">
-          {notice.date && <span>{notice.date}</span>}
+          {notice.Date && <span>{notice.Date}</span>}
           <span>お知らせ</span>
-          {notice.author && <span>{notice.author}</span>}
+          {notice.Author && <span>{notice.Author}</span>}
         </div>
 
         {/* Divider */}
@@ -76,7 +76,7 @@ const Content = () => {
 
         {/* Body */}
         <div className="mt-14 mx-auto max-w-2xl text-base sm:text-base text-gray-800 leading-8 whitespace-pre-wrap">
-          {notice.content}
+          {notice.Content}
         </div>
 
         {/* Bottom link */}

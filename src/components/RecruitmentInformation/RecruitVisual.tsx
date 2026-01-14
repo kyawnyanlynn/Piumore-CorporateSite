@@ -2,7 +2,7 @@ import { KV_Recruitment } from "../../images";
 
 const RecruitVisual = () => {
   return (
-    <div className="relative w-full aspect-[16/9] bg-white mt-[50px]">
+    <div className="relative w-full aspect-[16/9] bg-white mt-20 md:mt-16">
       <img
         src={KV_Recruitment}
         alt="Recruitment Visual"

@@ -6,7 +6,6 @@ import Brands from "./Brands";
 import Recruitment from "./Recruitment";
 import Footer from "../Footer";
 import Notices from "./Notices";
-
 import "../../App.css";
 import { useEffect } from "react";
 

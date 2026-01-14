@@ -25,6 +25,11 @@ const Brands = () => {
         <Link
           to="/brandscollection"
           className="block text-end text-[17px] pointer"
+          onClick={() => {
+            window.scrollTo(0, 0);
+            document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+          }}
         >
           ブランド一覧
         </Link>

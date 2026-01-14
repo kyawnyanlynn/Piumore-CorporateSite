@@ -22,8 +22,6 @@ const KatsuraIndex = () => {
         <KatsuraShortCart />
         <KatsuraMenu />
         <KatsuraSwiper />
-        {/* <KathuraMenu /> */}
-        {/* <KathuraSwiper /> */}
         <BrandsButton href="https://www.hotpepper.jp/strJ003959138/" />
         <Recruitment />
       </main>

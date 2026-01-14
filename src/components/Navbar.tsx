@@ -29,33 +29,80 @@ export default function Navbar() {
     <>
       <header className="site-header fixed top-0 left-0 w-full h-20 bg-white z-1002">
         <div className="flex justify-between items-center w-full h-full max-w-[1240px] mx-auto px-4">
-          <Link to="/">
+          <Link
+            to="/"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
+          >
             <img src={logo} alt="PIUMORE" className="h-10 cursor-pointer" />
           </Link>
 
           <ul className="hidden md:flex gap-9 font-medium text-lg">
             <li>
-              <Link to="/companyindex" className="nav-item">
+              <Link
+                to="/companyindex"
+                className="nav-item"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  document.documentElement.scrollTop = 0;
+                  document.body.scrollTop = 0;
+                }}
+              >
                 企業情報
               </Link>
             </li>
             <li>
-              <Link to="/fcindex" className="nav-item">
+              <Link
+                to="/fcindex"
+                className="nav-item"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  document.documentElement.scrollTop = 0;
+                  document.body.scrollTop = 0;
+                }}
+              >
                 企業提携
               </Link>
             </li>
             <li>
-              <Link to="/brandscollection" className="nav-item">
+              <Link
+                to="/brandscollection"
+                className="nav-item"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  document.documentElement.scrollTop = 0;
+                  document.body.scrollTop = 0;
+                }}
+              >
                 ブランド
               </Link>
             </li>
             <li>
-              <Link to="/notices" className="nav-item">
+              <Link
+                to="/notices"
+                className="nav-item"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  document.documentElement.scrollTop = 0;
+                  document.body.scrollTop = 0;
+                }}
+              >
                 お知らせ
               </Link>
             </li>
             <li>
-              <Link to="/recruitindex" className="nav-item">
+              <Link
+                to="/recruitindex"
+                className="nav-item"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                  document.documentElement.scrollTop = 0;
+                  document.body.scrollTop = 0;
+                }}
+              >
                 採用情報
               </Link>
             </li>
@@ -89,27 +136,67 @@ export default function Navbar() {
 
         <ul className="flex flex-col gap-8 px-8 pt-6 text-2xl font-medium items-center justify-between">
           <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
-            <Link to="/companyindex" className="nav-item">
+            <Link
+              to="/companyindex"
+              className="nav-item"
+              onClick={() => {
+                window.scrollTo(0, 0);
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+              }}
+            >
               企業情報
             </Link>
           </li>
           <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
-            <Link to="/fcindex" className="nav-item">
+            <Link
+              to="/fcindex"
+              className="nav-item"
+              onClick={() => {
+                window.scrollTo(0, 0);
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+              }}
+            >
               企業提携
             </Link>
           </li>
           <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
-            <Link to="/brandscollection" className="nav-item">
+            <Link
+              to="/brandscollection"
+              className="nav-item"
+              onClick={() => {
+                window.scrollTo(0, 0);
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+              }}
+            >
               ブランド
             </Link>
           </li>
           <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
-            <Link to="/notices" className="nav-item">
+            <Link
+              to="/notices"
+              className="nav-item"
+              onClick={() => {
+                window.scrollTo(0, 0);
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+              }}
+            >
               お知らせ
             </Link>
           </li>
           <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
-            <Link to="/recruitindex" className="nav-item">
+            <Link
+              to="/recruitindex"
+              className="nav-item"
+              onClick={() => {
+                window.scrollTo(0, 0);
+                document.documentElement.scrollTop = 0;
+                document.body.scrollTop = 0;
+              }}
+            >
               採用情報
             </Link>
           </li>
