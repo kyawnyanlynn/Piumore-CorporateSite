@@ -2,7 +2,7 @@ import Footer from "../Footer";
 import Navbar from "../Navbar";
 import { useEffect, useState } from "react";
 import "../../App.css";
-import Client from "../../Client";
+import Client from "../../client";
 import { Link } from "react-router-dom";
 
 const Notices = () => {
