@@ -1,13 +1,7 @@
-export { default as menu } from "./menu.svg";
-export { default as close } from "./close.svg";
 export { default as logo } from "./logo.jpg";
-
 export { default as Kv_Lauro } from "./Kv_Lauro.png";
 export { default as lauro_food } from "./lauro_food.png";
 export { default as lauro_shop } from "./lauro_shop.png";
-export { default as lauro_menu1 } from "./lauro_menu1.png";
-export { default as lauro_day_people } from "./lauro_day_people.png";
-export { default as recruitPeople } from "./recruitPeoples.png";
 export { default as KV_Recruitment } from "./KV_Recruitment.png";
 export { default as Recruit_lauro } from "./Recruit_lauro.png";
 export { default as Recruit_katsura } from "./Recruit_katsura.png";
@@ -36,7 +30,6 @@ export { default as high } from "./high.svg";
 export { default as hinoyaBig } from "./Hinoya_big.png";
 export { default as hinoyaLogo } from "./hinoya_logo.jpg";
 export { default as katsuraLogo } from "./katsura_logo.jpg";
-export { default as kvKatsura } from "./kv_Katsura.png";
 export { default as kvLauro } from "./kv_Lauro.png";
 export { default as kvRecruitment } from "./kv_Recruitment.png";
 export { default as kv1 } from "./kv_1.jpg";

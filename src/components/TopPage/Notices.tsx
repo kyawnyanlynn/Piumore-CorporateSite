@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Client from "../../client";
-
 const Notice = () => {
   const [notices, setNotices] = useState<any[]>([]);
 
   useEffect(() => {
     Client.fetch(
-      `*[_type == "notice"] | order(date desc)[0...3]{
-        header,
-        date,
+      `*[_type == "notice"] | order(Date desc)[0...3]{
+        Title,
+        Date,
         slug
       }`
     )
@@ -31,7 +30,7 @@ const Notice = () => {
                 to={`/notices/${notice.slug.current}`}
                 className="block text-center text-[#B42423] text-base md:text-lg hover:opacity-80 transition"
               >
-                {notice.header}
+                {notice.Title}
               </Link>
 
               <div className="mt-4 h-px w-full bg-black/70" />
@@ -44,6 +43,11 @@ const Notice = () => {
           <Link
             to="/notices"
             className="text-[#B42423] text-sm underline underline-offset-4 hover:opacity-80"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
           >
             お知らせ一覧
           </Link>

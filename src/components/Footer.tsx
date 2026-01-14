@@ -23,22 +23,70 @@ const Footer = () => {
           >
             TOP
           </button>
-          <Link className="footer-item" to="/companyindex">
+          <Link
+            className="footer-item"
+            to="/companyindex"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
+          >
             会社概要
           </Link>
-          <Link className="footer-item" to="/message">
+          <Link
+            className="footer-item"
+            to="/message"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
+          >
             代表挨拶
           </Link>
-          <Link className="footer-item" to="/companyindex">
+          <Link
+            className="footer-item"
+            to="/companyindex"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
+          >
             経営理念
           </Link>
-          <Link className="footer-item" to="/brandscollection">
+          <Link
+            className="footer-item"
+            to="/brandscollection"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
+          >
             ブランド
           </Link>
-          <Link className="footer-item" to="/recruitindex">
+          <Link
+            className="footer-item"
+            to="/recruitindex"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
+          >
             採用情報
           </Link>
-          <Link className="footer-item" to="/notices">
+          <Link
+            className="footer-item"
+            to="/notices"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
+          >
             お知らせ
           </Link>
           <a
