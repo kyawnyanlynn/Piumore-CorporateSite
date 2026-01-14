@@ -97,7 +97,7 @@ const Notices = () => {
                 <button
                   onClick={() => goToPage(page - 1)}
                   disabled={page === 1}
-                  className="px-3 py-2 text-xl disabled:opacity-30"
+                  className="px-3 py-2 text-xl disabled:opacity-30 cursor-pointer"
                   aria-label="Previous page"
                 >
                   ‹
@@ -128,7 +128,7 @@ const Notices = () => {
                 <button
                   onClick={() => goToPage(page + 1)}
                   disabled={page === totalPages}
-                  className="px-3 py-2 text-xl disabled:opacity-30"
+                  className="px-3 py-2 text-xl disabled:opacity-30 cursor-pointer"
                   aria-label="Next page"
                 >
                   ›

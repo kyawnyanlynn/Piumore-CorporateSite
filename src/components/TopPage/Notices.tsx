@@ -42,7 +42,7 @@ const Notice = () => {
         <div className="mt-20 text-center">
           <Link
             to="/notices"
-            className="text-[#B42423] text-sm underline underline-offset-4 hover:opacity-80"
+            className="text-black hover:text-[#B42423] text-base hover:underline"
             onClick={() => {
               window.scrollTo(0, 0);
               document.documentElement.scrollTop = 0;

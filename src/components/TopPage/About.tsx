@@ -37,7 +37,15 @@ const About = () => {
               を目指しています。
             </p>
           </div>
-          <Link to="/companyindex" className="underline mt-6 inline-block">
+          <Link
+            to="/companyindex"
+            className=" text-black hover:text-[#B42423] hover:underline mt-6 inline-block text-base"
+            onClick={() => {
+              window.scrollTo(0, 0);
+              document.documentElement.scrollTop = 0;
+              document.body.scrollTop = 0;
+            }}
+          >
             会社概要はこちら
           </Link>
         </div>

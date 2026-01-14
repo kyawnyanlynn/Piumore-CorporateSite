@@ -2,7 +2,7 @@ import { katsuraLogo, hinoyaLogo, lauroLogo } from "../../images";
 import { Link } from "react-router-dom";
 
 import "./css/brands.css";
-
+import "../../App.css";
 const Brands = () => {
   return (
     <section className="w-full bg-[#F8F8F8] py-12 md:py-20">
@@ -24,7 +24,7 @@ const Brands = () => {
         </div>
         <Link
           to="/brandscollection"
-          className="block text-end text-[17px] pointer"
+          className="block text-end text-[17px] pointer hover:underline text-black hover:text-[#B42423]"
           onClick={() => {
             window.scrollTo(0, 0);
             document.documentElement.scrollTop = 0;
