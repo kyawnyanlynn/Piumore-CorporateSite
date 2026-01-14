@@ -33,7 +33,7 @@ const BrandsCollection = () => {
     <>
       <Navbar />
       <main>
-        <section className="relative w-full py-16 md:py-24">
+        <section className="relative w-full py-16 md:py-24 mt-18">
           <div className="mx-auto w-[92%] max-w-6xl">
             <div className="text-center">
               <h2 className="text-4xl md:text-5xl font-semibold tracking-widest">

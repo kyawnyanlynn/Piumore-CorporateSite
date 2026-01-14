@@ -18,7 +18,7 @@ const Notice = () => {
   }, []);
 
   return (
-    <section className="bg-white py-24 mt-20">
+    <section className="bg-white py-10 mt-10">
       <div className="mx-auto max-w-5xl px-6">
         <h3 className="text-center text-[36px] md:text-5xl font-semibold tracking-[0.08em] text-[#B42423]">
           お知らせ

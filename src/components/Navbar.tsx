@@ -98,13 +98,11 @@ export default function Navbar() {
               企業提携
             </Link>
           </li>
-          <Link
-            to="/brandscollection"
-            className="cursor-pointer"
-            onClick={() => setIsOpen(false)}
-          >
-            ブランド
-          </Link>
+          <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
+            <Link to="/brandscollection" className="nav-item">
+              ブランド
+            </Link>
+          </li>
           <li className="cursor-pointer" onClick={() => setIsOpen(false)}>
             <Link to="/notices" className="nav-item">
               お知らせ

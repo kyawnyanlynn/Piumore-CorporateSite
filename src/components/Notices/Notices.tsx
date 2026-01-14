@@ -27,22 +27,22 @@ const Notices = () => {
       <div className="min-h-screen flex flex-col">
         <Navbar />
         <main className="flex-1">
-          <section className="bg-gray-50 py-20 mt-20">
+          <section className="py-20 mt-20">
             <div className="mx-auto max-w-5xl px-6">
               <div className="rounded-2xl bg-white px-3 py-3">
                 <ul>
                   {notices.map((notice, idx) => (
                     <li key={idx} className="py-2">
                       <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8">
-                        <span className="text-sm text-red-600 min-w-[90px]">
+                        <span className="text-sm text-[#B42423] min-w-[90px font-bold">
                           {notice.date}
                         </span>
 
-                        <span className="inline-block whitespace-nowrap rounded-full bg-red-700 px-4 py-1 text-xs text-white">
+                        <span className="inline-block whitespace-nowrap rounded-full md:bg-[#B42423] md:px-4 md:py-1 text-xs text-[#B42423] font-bold md:text-white">
                           お知らせ
                         </span>
                         <Link to={`/notices/${notice.slug.current}`}>
-                          <p className="text-4xl font-bold md:text-base leading-relaxed hover:underline">
+                          <p className="text-lg md:text-base font-bold leading-relaxed hover:underline">
                             {notice.header}
                           </p>
                         </Link>

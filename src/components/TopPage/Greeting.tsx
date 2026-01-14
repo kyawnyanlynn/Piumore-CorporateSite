@@ -20,24 +20,24 @@ const Greeting = () => {
             代表メッセージ
           </h3>
 
-          <p className="text-[16px] md:text-[20px] leading-7 md:leading-9">
+          <p className="text-[16px] md:text-[18px] leading-10 md:leading-9">
             飲食業界は、環境変化の影響を受けやすく、常に柔軟な経営判断が求められる分野です。
           </p>
 
-          <p className="text-[16px] md:text-[20px] pb-4 md:pb-6 leading-7 md:leading-10">
+          <p className="text-[16px] md:text-[18px] pb-4 md:pb-6 leading-7 md:leading-10">
             だからこそ当社では、「品質」「接客」「働く人材」「組織づくり」
             この4つを成長の核として位置づけ、店舗運営の標準化と個性化の両立を目指しています。
           </p>
 
-          <p className="text-[16px] md:text-[20px] leading-7 md:leading-10 mb-6 md:mb-10">
+          <p className="text-[16px] md:text-[18px] leading-7 md:leading-10 mb-6 md:mb-10">
             食を取り巻く環境が変わり続ける中で、
             PIUMOREは「確かな品質」と「誠実な運営」を第一に、
             長く信頼いただけるパートナーでありたいと考えております。
           </p>
 
-          <p className="text-[18px] md:text-[24px] font-normal">
+          <p className="text-[18px] md:text-[20px] font-normal">
             代表
-            <span className="text-[24px] md:text-[32px] pl-2">小森 桂介</span>
+            <span className="text-[24px] md:text-[28px] pl-2">小森 桂介</span>
           </p>
         </div>
 
@@ -45,7 +45,7 @@ const Greeting = () => {
           className="
             relative w-full md:absolute md:right-0 md:bottom-0
             md:w-[320px] md:h-[190px]
-            h-[120px] mt-6 md:mt-0 overflow-hidden
+            h-[120px] mt-0 overflow-hidden
           "
         >
           <div
@@ -59,7 +59,7 @@ const Greeting = () => {
           >
             <Link
               to="/message"
-              className="flex items-center justify-end gap-2 text-[16px] md:text-[20px] z-10 border-none"
+              className="flex items-center justify-end gap-2 text-[16px] md:text-[18px] z-10 border-none"
             >
               メッセージを読む
             </Link>

@@ -84,7 +84,7 @@ function VerticalBadge({
       }}
     >
       <span
-        className="text-[28px] md:text-[40px] lg:text-[72px] leading-none translate-y-1.5 md:translate-y-0"
+        className="text-[28px] md:text-[40px] lg:text-[68px] leading-none translate-y-1.5 "
         style={{
           opacity: 0,
           animation: "textIn 0.8s ease-in-out forwards",

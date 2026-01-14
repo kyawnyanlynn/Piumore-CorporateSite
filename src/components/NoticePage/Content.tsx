@@ -65,7 +65,7 @@ const Content = () => {
         </h1>
 
         {/* Meta */}
-        <div className="mt-10 flex items-center gap-12 text-sm text-gray-700">
+        <div className="mt-10 flex items-center gap-12 text-sm text-gray-700 font-medium">
           {notice.date && <span>{notice.date}</span>}
           <span>お知らせ</span>
           {notice.author && <span>{notice.author}</span>}
@@ -75,7 +75,7 @@ const Content = () => {
         <div className="mt-4 h-px w-full bg-gray-400/80" />
 
         {/* Body */}
-        <div className="mt-14 mx-auto max-w-2xl text-sm sm:text-base text-gray-800 leading-8 whitespace-pre-wrap">
+        <div className="mt-14 mx-auto max-w-2xl text-base sm:text-base text-gray-800 leading-8 whitespace-pre-wrap">
           {notice.content}
         </div>
 

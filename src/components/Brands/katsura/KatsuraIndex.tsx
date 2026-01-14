@@ -12,7 +12,7 @@ import BrandsButton from "../BrandsButton";
 import Navbar from "../../Navbar";
 import Recruitment from "../../TopPage/Recruitment";
 
-const KathuraIndex = () => {
+const KatsuraIndex = () => {
   return (
     <>
       <Navbar />
@@ -31,4 +31,4 @@ const KathuraIndex = () => {
     </>
   );
 };
-export default KathuraIndex;
+export default KatsuraIndex;
