@@ -28,7 +28,7 @@ const Notice = () => {
             <li key={notice.slug.current}>
               <Link
                 to={`/notices/${notice.slug.current}`}
-                className="block text-center text-[#B42423] text-base md:text-lg hover:opacity-80 transition"
+                className="block text-center text-[#B42423] text-base md:text-lg hover:opacity-80 transition font-medium"
               >
                 {notice.Title}
               </Link>
@@ -39,10 +39,10 @@ const Notice = () => {
         </ul>
 
         {/* Bottom link */}
-        <div className="mt-20 text-center">
+        <div className="mt-5 text-center">
           <Link
             to="/notices"
-            className="text-black hover:text-[#B42423] text-base hover:underline"
+            className="text-black hover:text-[#B42423] text-base hover:underline font-semibold"
             onClick={() => {
               window.scrollTo(0, 0);
               document.documentElement.scrollTop = 0;

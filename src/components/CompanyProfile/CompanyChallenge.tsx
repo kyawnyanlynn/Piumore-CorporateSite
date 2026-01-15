@@ -26,7 +26,7 @@ const CompanyChallenge = () => {
           </div>
         </div>
 
-        <p className="mt-10 text-base/7">
+        <p className="mt-10 text-lg/7 font-medium">
           私たちは、それぞれに「もっとできる」と信じています。
           その小さな「もっと」を積み重ねることで、PIUMOREの店は日々進化しています。
         </p>

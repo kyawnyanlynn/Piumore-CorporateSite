@@ -2,11 +2,10 @@ import { Recruit_boss } from "../../images";
 
 const Recriutboss = () => {
   return (
-    <div className="px-[5%] sm:px-[10%] mx-auto my-30">
+    <div className="px-[5%] sm:px-[10%] mx-auto my-20">
       <div>
-        <h2 className="text-center text-2xl sm:text-4xl my-30">
+        <h2 className="text-left md:text-center text-2xl sm:text-3xl my-20 md:my-25 font-medium">
           私たちは、社員一人ひとりが最大限の能力を
-          <br />
           発揮できる環境づくりを大切にしています。
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
@@ -15,8 +14,8 @@ const Recriutboss = () => {
             alt="代表取締役　小森 桂介"
             className="w-full"
           />
-          <div className="flex flex-col justify-between">
-            <p className=" leading-relaxed tracking-wide">
+          <div className="flex flex-col justify-between gap-6 font-regular">
+            <p className=" leading-7 tracking-wide">
               私自身、18歳で家を出て、料理人としての道を歩み始めました。
               <br />
               現場で鍋を振る日々、企業でフードビジネスを学んだ経験、そして組織の中で感じた違和感。そのすべてが、今のPIUMOREをつくる土台になっています。
@@ -39,7 +38,8 @@ const Recriutboss = () => {
               </span>
             </p>
             <p>
-              代表取締役　<span className="text-2xl">小森 桂介</span>
+              代表取締役　
+              <span className="text-2xl font-medium">小森 桂介</span>
             </p>
           </div>
         </div>

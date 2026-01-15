@@ -12,7 +12,7 @@ const CompanyManagement = () => {
             「“もっと”の文化を世界へ」
           </h3>
           <div className="text-pretty">
-            <p className="text-base/8">
+            <p className="text-base/8 font-medium">
               PIUMOREは、飲食を通して人の可能性と笑顔を広げていきます。
               “もっとおいしく”、“もっと働きやすく”という価値観を、世界基準の飲食モデルに
               自社ブランドだけでなく、飲食業界全体の底上げに貢献

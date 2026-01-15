@@ -9,11 +9,18 @@ const BrandsButton = ({ href }: BrandsButtonProps) => {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="w-full sm:w-[30%]"
+        className="
+          w-[250px] h-[58px]
+          sm:w-[22%] md:h-[70px]
+          flex items-center justify-center
+          rounded-[40px]
+          bg-[#B42423]
+          text-white text-xl sm:text-2xl
+          cursor-pointer
+          leading-none
+        "
       >
-        <button className="w-full h-[70px] p-5 rounded-[40px] bg-[#B42423] text-white text-xl sm:text-2xl cursor-pointer">
-          ご予約はこちらから
-        </button>
+        ご予約はこちらから
       </a>
     </div>
   );

@@ -39,7 +39,7 @@ const About = () => {
           </div>
           <Link
             to="/companyindex"
-            className=" text-black hover:text-[#B42423] hover:underline mt-6 inline-block text-base"
+            className=" text-black hover:text-[#B42423] hover:underline mt-6 inline-block text-base font-semibold"
             onClick={() => {
               window.scrollTo(0, 0);
               document.documentElement.scrollTop = 0;

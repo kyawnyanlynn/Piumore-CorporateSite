@@ -67,10 +67,10 @@ function VerticalBadge({
       className={[
         "bg-[#B42423] text-white font-bold",
         "flex items-center justify-center",
-        "w-[52px] md:w-[72px] lg:w-[120px]",
+        "w-[62px] md:w-[72px] lg:w-[120px]",
         tall
-          ? "h-[230px] md:h-[300px] lg:h-[500px]"
-          : "h-[190px] md:h-[260px] lg:h-[410px]",
+          ? "h-[280px] md:h-[300px] lg:h-[500px]"
+          : "h-[230px] md:h-[260px] lg:h-[410px]",
         "overflow-hidden",
       ].join(" ")}
       style={{
@@ -83,8 +83,8 @@ function VerticalBadge({
         animationDelay: delay,
       }}
     >
-      <span
-        className="text-[28px] md:text-[40px] lg:text-[68px] leading-none translate-y-1.5 "
+      <h1
+        className="text-[35px] md:text-[40px] lg:text-[68px] leading-none translate-y-1.5 "
         style={{
           opacity: 0,
           animation: "textIn 0.8s ease-in-out forwards",
@@ -92,7 +92,7 @@ function VerticalBadge({
         }}
       >
         {text}
-      </span>
+      </h1>
     </div>
   );
 }

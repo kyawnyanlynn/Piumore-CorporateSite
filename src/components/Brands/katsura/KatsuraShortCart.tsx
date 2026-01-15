@@ -7,7 +7,7 @@ const KatsuraShortCart = () => {
         <div className="w-full bg-white rounded-xl  p-0 md:p-5 lg:p-10 flex flex-col md:flex-row  gap-8 max-w-[1200px] mx-auto leading-relaxed tracking-wide">
           <div className="flex-1 w-full sm:w-[45%]">
             <h2 className="text-2xl md:text-xl lg:text-5xl font-bold text-[#B42423] leading-tight my-8">
-              路地裏に佇む <br /> 本格イタリアン
+              伝統味噌を用いた <br /> 江戸前すき焼き
             </h2>
 
             <p className="text-gray-700 text-base sm:text-lg leading-relaxed ">
