@@ -59,7 +59,7 @@ const Greeting = () => {
           >
             <Link
               to="/message"
-              className="flex items-center justify-end gap-2 text-[16px] md:text-[18px] z-10 border-none"
+              className="flex items-center justify-end gap-2 font-medium text-[16px] md:text-[18px] z-10 border-none"
               onClick={() => {
                 window.scrollTo(0, 0);
                 document.documentElement.scrollTop = 0;
@@ -75,7 +75,7 @@ const Greeting = () => {
             />
           </div>
 
-          <div className="quarter-circle"></div>
+          <div className="quarter-circle hidden md:block"></div>
         </div>
       </div>
     </section>

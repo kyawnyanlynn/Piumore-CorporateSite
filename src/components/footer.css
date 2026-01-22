@@ -2,6 +2,7 @@
   position: relative;
   display: inline-block;
   padding-bottom: 4px;
+  color: inherit;
 }
 
 .footer-item::after {
@@ -11,15 +12,23 @@
   bottom: 0;
   height: 2px;
   width: 0;
-  background: white; /* Footer is white text */
-  transition: width 250ms ease;
+  background: white;
   transform-origin: left;
+  transition: width 250ms ease;
 }
 
-.footer-item:hover::after {
-  width: 100%;
+@media (hover: hover) and (pointer: fine) {
+  .footer-item:hover::after {
+    width: 100%;
+  }
+
+  .footer-item:hover {
+    cursor: pointer;
+  }
 }
 
-.footer-item:hover {
-  cursor: pointer;
+@media (hover: none) and (pointer: coarse) {
+  .footer-item::after {
+    width: 0 !important;
+  }
 }
