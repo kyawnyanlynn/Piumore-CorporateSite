@@ -43,7 +43,7 @@ const Recruitment = () => {
             採用情報を見る
             <img
               src={rightArrow}
-              alt=""
+              alt="採用セックションの矢印の画像"
               className="
       absolute right-6.5 w-4
       opacity-0 translate-x-2
@@ -56,11 +56,10 @@ const Recruitment = () => {
           </Link>
         </div>
 
-        {/* IMAGE */}
         <div className="flex justify-center w-full md:w-auto">
           <img
             src={recruitmentCircle}
-            alt=""
+            alt="採用ページ用の社員二人の写真"
             className="w-[220px] h-[220px] md:w-[400px] md:h-[400px] object-contain"
           />
         </div>

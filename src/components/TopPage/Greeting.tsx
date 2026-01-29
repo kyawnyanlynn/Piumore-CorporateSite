@@ -71,7 +71,7 @@ const Greeting = () => {
             <img
               className="w-4 md:w-5"
               src={isHover ? rightArrow : rightArrowRed}
-              alt=""
+              alt="矢印の画像"
             />
           </div>
 

@@ -19,10 +19,10 @@ const CompanyChallenge = () => {
           <div className="lg:w-1/2 flex  items-center justifuy-center gap-5">
             <img
               src={Challenge_1}
-              alt=""
+              alt="写真が仕事している写真"
               className="w-[260px] h-[260px] object-cover rounded-lg"
             />
-            <img src={Challenge_2} alt="" />
+            <img src={Challenge_2} alt="写真が仕事している写真" />
           </div>
         </div>
 

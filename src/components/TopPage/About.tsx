@@ -4,14 +4,11 @@ const About = () => {
   return (
     <section className="relative w-full flex justify-center mt-40">
       <div className="relative w-full max-w-[900px] px-6">
-        {/* background logo centered behind content */}
         <img
           src={piumoreBack}
-          alt=""
+          alt="piumoreロゴ"
           className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[420px] opacity-10 pointer-events-none z-0"
         />
-
-        {/* content sits above the background */}
         <div className="relative text-center">
           <h2 className="text-4xl font-medium mb-6">
             <span className="text-[#B42423]">PIUMORE</span>とは

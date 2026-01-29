@@ -1,5 +1,4 @@
-// MessageSection.tsx
-import { representative } from "../../images"; // 画像パスは調整してね
+import { representative } from "../../images";
 import Navbar from "../Navbar";
 import Recruitment from "../TopPage/Recruitment";
 import Footer from "../Footer";
@@ -11,12 +10,11 @@ const MessageSection = () => {
         <section className="w-full bg-white mt-[50px]">
           <div className="mx-auto w-[92%] max-w-6xl py-14 md:py-20">
             <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:gap-14">
-              {/* Left */}
               <div>
                 <div className="overflow-hidden rounded-sm bg-white shadow-[0_8px_30px_rgba(0,0,0,0.08)]">
                   <img
                     src={representative}
-                    alt="代表取締役 小森 桂介"
+                    alt="代表取締役小森桂介の画像"
                     className="h-auto w-full object-cover"
                   />
                 </div>
@@ -34,7 +32,6 @@ const MessageSection = () => {
                 </div>
               </div>
 
-              {/* Right */}
               <div className="text-[15px] leading-8 text-black md:text-base md:leading-8">
                 <p>
                   平素より格別のご高配を賜り、心より御礼申し上げます。

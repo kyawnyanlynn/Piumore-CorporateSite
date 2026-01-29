@@ -39,7 +39,11 @@ const FCIndex = () => {
             <h2 className="text-2xl sm:text-3xl font-bold text-center mb-10 sm:mb-20">
               FC事業：日乃屋カレー
             </h2>
-            <img src={Recruit_hinoya} alt="" className="w-[80%] sm:w-[25%]" />
+            <img
+              src={Recruit_hinoya}
+              alt="日乃屋カレーロゴ"
+              className="w-[80%] sm:w-[25%]"
+            />
           </div>
 
           <div className="px-[5%] sm:px-[10%] flex flex-col lg:flex-row items-center gap-10 my-10 sm:my-20 ">
@@ -55,7 +59,7 @@ const FCIndex = () => {
             <div className="lg:w-1/2 flex justify-center">
               <img
                 src={FCbusiness_3}
-                alt=""
+                alt="日乃屋カレーのスタッフが笑っている画像"
                 className="max-w-[380px] w-full rounded-lg object-cover"
               />
             </div>

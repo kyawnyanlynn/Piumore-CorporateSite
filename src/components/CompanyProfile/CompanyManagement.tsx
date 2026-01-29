@@ -19,8 +19,8 @@ const CompanyManagement = () => {
             </p>
           </div>
           <div className="flex flex-col sm:flex-row gap-5 my-10">
-            <img src={Management_1} alt="" />
-            <img src={Management_2} alt="" />
+            <img src={Management_1} alt="料理を作っている写真" />
+            <img src={Management_2} alt="料理を作っている写真" />
           </div>
           <p className="text-base">
             「PIUMOREで働く＝自分の“もっと”が実現できる場所」と言われる会社へ

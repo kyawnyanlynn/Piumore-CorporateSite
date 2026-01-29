@@ -37,7 +37,7 @@ export default function Navbar() {
               document.body.scrollTop = 0;
             }}
           >
-            <img src={logo} alt="PIUMORE" className="h-10 cursor-pointer" />
+            <img src={logo} alt="PIUMOREロゴ" className="h-10 cursor-pointer" />
           </Link>
 
           <ul className="hidden md:flex gap-9 font-medium text-lg">

@@ -10,7 +10,7 @@ const Notice = () => {
         Title,
         Date,
         slug
-      }`
+      }`,
     )
       .then(setNotices)
       .catch(console.error);
@@ -37,8 +37,6 @@ const Notice = () => {
             </li>
           ))}
         </ul>
-
-        {/* Bottom link */}
         <div className="mt-5 text-center">
           <Link
             to="/notices"

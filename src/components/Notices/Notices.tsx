@@ -43,7 +43,7 @@ const Notices = () => {
         Content,
         Author,
         slug
-      }`
+      }`,
     )
       .then((data) => setNotices(data))
       .catch(console.error);
@@ -93,7 +93,6 @@ const Notices = () => {
 
               {/* Pagination */}
               <div className="mt-10 flex items-center justify-center gap-3">
-                {/* Prev */}
                 <button
                   onClick={() => goToPage(page - 1)}
                   disabled={page === 1}
@@ -103,7 +102,7 @@ const Notices = () => {
                   ‹
                 </button>
 
-                {/* Page numbers */}
+                {/* Pages  */}
                 <div className="flex items-center gap-3">
                   {Array.from({ length: totalPages }, (_, i) => i + 1).map(
                     (p) => (
@@ -120,11 +119,9 @@ const Notices = () => {
                       >
                         {p}
                       </button>
-                    )
+                    ),
                   )}
                 </div>
-
-                {/* Next */}
                 <button
                   onClick={() => goToPage(page + 1)}
                   disabled={page === totalPages}

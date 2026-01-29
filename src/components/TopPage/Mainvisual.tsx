@@ -22,7 +22,7 @@ export default function Mainvisual() {
             <img
               key={i}
               src={img}
-              alt="main visual"
+              alt="メインビジュアルの画像"
               className={[
                 "absolute inset-0 w-full h-full object-cover block",
                 "transition-opacity duration-700 ease-in-out",

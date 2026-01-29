@@ -26,7 +26,7 @@ const Content = () => {
         Date,
         Author
       }`,
-      { slug }
+      { slug },
     )
       .then((data) => setNotice(data))
       .catch(console.error)
@@ -59,27 +59,18 @@ const Content = () => {
   return (
     <section className="bg-white mt-20">
       <div className="mx-auto max-w-5xl px-6 py-16">
-        {/* Title */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight leading-snug">
           {notice.Title}
         </h1>
-
-        {/* Meta */}
         <div className="mt-10 flex items-center gap-12 text-sm text-gray-700 font-medium">
           {notice.Date && <span>{notice.Date}</span>}
           <span>お知らせ</span>
           {notice.Author && <span>{notice.Author}</span>}
         </div>
-
-        {/* Divider */}
         <div className="mt-4 h-px w-full bg-gray-400/80" />
-
-        {/* Body */}
         <div className="mt-14 mx-auto max-w-2xl text-base sm:text-base text-gray-800 leading-8 whitespace-pre-wrap">
           {notice.Content}
         </div>
-
-        {/* Bottom link */}
         <div className="mt-20 text-center">
           <Link
             to="/notices"

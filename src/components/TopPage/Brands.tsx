@@ -33,7 +33,6 @@ const Brands = () => {
         >
           ブランド一覧
         </Link>
-        {/* FC Section */}
         <div className="flex flex-col items-center mt-14 md:mt-20">
           <h3 className="text-[26px] md:text-4xl mb-8 md:mb-10 font-semibold">
             FC事業

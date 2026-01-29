@@ -12,7 +12,7 @@ const RecruitAbout = () => {
         <div>
           <img
             src={Recruit_lauro}
-            alt="オステリアラウロ"
+            alt="オステリアラウロロゴ"
             className="w-full h-48 object-cover rounded-lg mb-5"
           />
           <p className="text-center font-bold mb-5 text-lg">
@@ -27,7 +27,7 @@ const RecruitAbout = () => {
         <div>
           <img
             src={Recruit_katsura}
-            alt="かつら"
+            alt="かつらロゴ"
             className="w-full h-48 object-cover rounded-lg mb-5"
           />
           <p className="text-center font-bold mb-5 text-lg">
@@ -41,7 +41,7 @@ const RecruitAbout = () => {
         <div>
           <img
             src={Recruit_hinoya}
-            alt="日乃屋カレー"
+            alt="日乃屋カレーロゴ"
             className="w-full h-48 object-cover rounded-lg mb-5"
           />
           <p className="text-center font-bold mb-5 text-lg">

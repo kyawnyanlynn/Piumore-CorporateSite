@@ -23,7 +23,7 @@ const BrandsCollection = () => {
         slug,
         logo,
         description
-      }`
+      }`,
     )
       .then(setBrands)
       .catch(console.error);
@@ -48,7 +48,7 @@ const BrandsCollection = () => {
                   key={b._id}
                   className="rounded-2xl bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)] overflow-hidden flex flex-col h-full"
                 >
-                  {/* logo */}
+                  {" "}
                   <div className="flex items-center justify-center px-10 pt-10">
                     {b.logo ? (
                       <img
@@ -60,14 +60,10 @@ const BrandsCollection = () => {
                       <div className="h-24 w-full rounded bg-gray-100" />
                     )}
                   </div>
-
-                  {/* content */}
                   <div className="px-6 pt-8 pb-7 flex flex-col flex-1">
                     <h3 className="text-center text-[#B42423] font-semibold text-lg">
                       {b.title}
                     </h3>
-
-                    {/* description */}
                     <div className="mt-6 text-sm leading-7 text-gray-800 space-y-3">
                       {b.description
                         ?.filter((blk: any) => blk._type === "block")
@@ -79,8 +75,6 @@ const BrandsCollection = () => {
                           </p>
                         ))}
                     </div>
-
-                    {/* button pinned to bottom */}
                     <div className="mt-auto pt-10 flex justify-center">
                       <Link
                         to={`/${b.slug.current}`}
